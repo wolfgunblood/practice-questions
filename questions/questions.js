@@ -1,0 +1,5768 @@
+export const set1 = [
+  {
+    questionNumber: 1,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Gross Domestic Product:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is the sum total of domestic final consumption and investment expenditure plus net of exports and imports",
+        },
+        {
+          label: "2",
+          text: "It is the sum total of final domestic consumption and investment expenditure plus exports",
+        },
+        {
+          label: "3",
+          text: "It is the sum total of final consumption and investment expenditure plus net of exports and imports",
+        },
+        {
+          label: "4",
+          text: "It is the sum total of final consumption and investment expenditure plus exports",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 3 & 4 only",
+      "(d) 1, 2 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "GDP",
+        "macro fundamentals",
+        "consumption",
+        "investment",
+        "exports",
+        "imports",
+      ],
+    },
+  },
+  {
+    questionNumber: 2,
+    type: "multiple-choice-with-statements",
+    title:
+      "If India is experiencing economic growth, then which of the following statements must hold true:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Real GDP will increase" },
+        { label: "2", text: "Nominal GDP will increase" },
+        { label: "3", text: "Rate of growth of real GDP will increase" },
+        { label: "4", text: "Increase in employment generation" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) 1 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["economic growth", "real GDP", "nominal GDP", "employment"],
+    },
+  },
+  {
+    questionNumber: 3,
+    type: "simple-multiple-choice",
+    title:
+      "If a country is experiencing recession, then which of the following must be true:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      simpleText: "Choose the correct effect of recession on GDP.",
+    },
+    options: [
+      "(a) Decrease in real GDP",
+      "(b) Decrease in nominal GDP",
+      "(c) Decrease in rate of growth of GDP",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["recession", "real GDP", "nominal GDP", "growth rate"],
+    },
+  },
+  {
+    questionNumber: 4,
+    type: "simple-multiple-choice",
+    title:
+      "The National Income of a country (India) is equal to which of the following:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Choose the correct measure of National Income.",
+    },
+    options: [
+      "(a) Gross National Product (GNP)",
+      "(b) Net National Product at Market Prices",
+      "(c) Net National Product at Factor Cost",
+      "(d) Income going to the household sector",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["national income", "GNP", "NNP", "factor cost"],
+    },
+  },
+  {
+    questionNumber: 5,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding Gross National Income:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is the income earned by a country's Residents",
+        },
+        {
+          label: "2",
+          text: "It is the income earned by a country's residents and non-residents both",
+        },
+        { label: "3", text: "It is calculated at market price by NSO" },
+        { label: "4", text: "It is equal to GDP plus exports minus imports" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 1 & 4 only",
+      "(c) 2 & 3 only",
+      "(d) 2, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["gross national income", "GNI", "NSO", "GDP"],
+    },
+  },
+  {
+    questionNumber: 6,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Product taxes and production taxes both are included as part of GDP calculation",
+        },
+        {
+          label: "2",
+          text: "Net Factor Income from Abroad is equivalent to net of exports & imports",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "GDP calculation",
+        "product taxes",
+        "factor income",
+        "exports",
+        "imports",
+      ],
+    },
+  },
+];
+
+export const set2 = [
+  {
+    questionNumber: 7,
+    type: "simple-multiple-choice",
+    title:
+      "Welfare of the people of a country is best represented by which of the following parameter:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the correct economic indicator for measuring welfare.",
+    },
+    options: [
+      "(a) Per capita net national income at constant prices",
+      "(b) Per capita net national income at current prices",
+      "(c) Per capita GDP at constant prices",
+      "(d) Per capita GDP at current prices",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["welfare", "national income", "GDP", "per capita"],
+    },
+  },
+  {
+    questionNumber: 8,
+    type: "multiple-choice-with-statements",
+    title:
+      "There is a Chinese company doing business in India. The profit made by the company will be part of:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "India's GDP" },
+        { label: "2", text: "China's GNP" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["GDP", "GNP", "foreign investment", "Chinese company"],
+    },
+  },
+  {
+    questionNumber: 9,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Gross National Income (GNI)/GNP:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It includes production taxes" },
+        {
+          label: "2",
+          text: "It includes transfer payment from rest of the world",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["GNI", "GNP", "production taxes", "transfer payments"],
+    },
+  },
+  {
+    questionNumber: 10,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following constitutes investment in the economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Production of consumption goods" },
+        { label: "2", text: "Production of capital goods" },
+        { label: "3", text: "Production of services" },
+        { label: "4", text: "Buying and selling of shares" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 only",
+      "(c) 2 & 4 only",
+      "(d) 2 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["investment", "capital goods", "services", "shares"],
+    },
+  },
+  {
+    questionNumber: 11,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Imported capital equipment are part of investment in Indian economy",
+        },
+        {
+          label: "2",
+          text: "Capital goods exported out of India are not part of India’s investment",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["investment", "capital goods", "imports", "exports"],
+    },
+  },
+  {
+    questionNumber: 12,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements could be true for a high savings rate in an economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Higher investment" },
+        { label: "2", text: "Higher consumption" },
+        { label: "3", text: "Higher exports" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["savings", "investment", "consumption", "exports"],
+    },
+  },
+  {
+    questionNumber: 13,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following are part of gross fixed capital formation:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Machinery and equipment" },
+        {
+          label: "2",
+          text: "Construction of buildings and other infrastructure",
+        },
+        { label: "3", text: "Intellectual property rights" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 2 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "capital formation",
+        "machinery",
+        "infrastructure",
+        "intellectual property",
+      ],
+    },
+  },
+  {
+    questionNumber: 14,
+    type: "simple-multiple-choice",
+    title:
+      "Despite being a high saving economy, capital formation may not result in significant increase in output due to:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the main constraint that reduces the impact of capital formation.",
+    },
+    options: [
+      "(a) Weak administrative machinery",
+      "(b) Illiteracy",
+      "(c) High population density",
+      "(d) High capital-output ratio",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["capital formation", "savings", "productivity", "output"],
+    },
+  },
+];
+
+export const set3 = [
+  {
+    questionNumber: 15,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Incremental Capital Output Ratio (ICOR):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It shows how efficiently the new capital is being used to produce output",
+        },
+        {
+          label: "2",
+          text: "It is the extra unit of capital required to produce one additional unit of output",
+        },
+        {
+          label: "3",
+          text: "It is the extra unit of output produced from one additional unit of capital",
+        },
+        {
+          label: "4",
+          text: "It is the ratio of change in capital to change in output",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1, 2 & 4 only",
+      "(d) 1, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "ICOR",
+        "capital-output ratio",
+        "investment efficiency",
+        "growth accounting",
+      ],
+    },
+  },
+  {
+    questionNumber: 16,
+    type: "multiple-choice-with-statements",
+    title:
+      "Capital formation in a country will lead to which of the following:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Increase in ICOR" },
+        { label: "2", text: "Decrease in ICOR" },
+        { label: "3", text: "Economic growth" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 & 3 only",
+      "(c) 3 only",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["capital formation", "ICOR", "economic growth"],
+    },
+  },
+  {
+    questionNumber: 17,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Capital output ratio depends on governance, quality of labour, technology etc.",
+        },
+        {
+          label: "2",
+          text: "Economic output increases with decrease in capital output ratio",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) Both 1 & 2"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "capital-output ratio",
+        "productivity",
+        "governance",
+        "technology",
+      ],
+    },
+  },
+  {
+    questionNumber: 18,
+    type: "simple-multiple-choice",
+    title:
+      "For a sustained high growth, which of the following statements will be true:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the condition(s) supportive of sustained high growth.",
+    },
+    options: [
+      "(a) Raising the investment by keeping the incremental capital output ratio minimum",
+      "(b) Raising the investment and incremental capital output ratio both",
+      "(c) Increasing capital output ratio and keeping investment at a constant rate",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["growth", "investment", "ICOR", "productivity"],
+    },
+  },
+  {
+    questionNumber: 19,
+    type: "multiple-choice-with-statements",
+    title:
+      "If the capacity utilization in the economy is decreasing then consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Capital to output ratio will decrease" },
+        { label: "2", text: "Per unit cost of production will increase" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "capacity utilization",
+        "cost of production",
+        "capital-output ratio",
+      ],
+    },
+  },
+  {
+    questionNumber: 20,
+    type: "simple-multiple-choice",
+    title:
+      "If factories are running at full capacity utilization, then the marginal productivity of capital will be:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the marginal productivity of capital at full capacity.",
+    },
+    options: ["(a) Positive", "(b) Negative", "(c) Zero", "(d) One"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["marginal productivity", "capital", "capacity utilization"],
+    },
+  },
+  {
+    questionNumber: 21,
+    type: "simple-multiple-choice",
+    title:
+      "If a country's growth rate is good but there is no corresponding growth in employment, then which of the following could be the reasons:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Identify the plausible causes of jobless growth.",
+    },
+    options: [
+      "(a) The growth is coming from better utilization of existing capacity and not because of increase in investment",
+      "(b) The growth is coming from increase in investment but not because of better utilization of existing capacity",
+      "(c) The growth is coming from both as a result of increase in investment and increase in capacity utilization",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "jobless growth",
+        "investment",
+        "capacity utilization",
+        "employment",
+      ],
+    },
+  },
+];
+
+export const set4 = [
+  {
+    questionNumber: 22,
+    type: "simple-multiple-choice",
+    title: "Economic growth in a country will necessarily have to occur if:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Choose the condition that makes growth inevitable.",
+    },
+    options: [
+      "(a) There is technological progress in the country",
+      "(b) There is population growth in the country",
+      "(c) There is capital formation in the country",
+      "(d) The country’s exports are increasing",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["growth", "technology", "capital formation", "exports"],
+    },
+  },
+  {
+    questionNumber: 23,
+    type: "simple-multiple-choice",
+    title:
+      "A country is going through a phase of industrialization. Which of the following statements are correct?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Identify what typically rises during industrialization.",
+    },
+    options: [
+      "(a) Capital to labour ratio increases",
+      "(b) Productivity of labour increases",
+      "(c) Total factor productivity increases",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "industrialization",
+        "capital-labour ratio",
+        "productivity",
+        "TFP",
+      ],
+    },
+  },
+  {
+    questionNumber: 24,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are correct about CPI rural, CPI urban and CPI combined index?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Inflation data is published by NSO" },
+        { label: "2", text: "The base year is 2011-12" },
+        {
+          label: "3",
+          text: "It is released for all India and for states and UTs separately on a monthly basis",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["CPI", "NSO", "base year", "states and UTs", "inflation"],
+    },
+  },
+  {
+    questionNumber: 25,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding CPI Combined:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It captures/reflects the impact of monthly change in prices of various commodities",
+        },
+        {
+          label: "2",
+          text: "It does not capture/reflect the impact of monthly change in consumption pattern of various commodities",
+        },
+        {
+          label: "3",
+          text: "It captures/reflects the impact of yearly change in consumption pattern of various commodities",
+        },
+        {
+          label: "4",
+          text: "It captures the impact of consumption pattern of people through their expenditure on various items",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1, 2 & 4 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "CPI Combined",
+        "inflation measurement",
+        "consumption pattern",
+        "weights",
+      ],
+    },
+  },
+  {
+    questionNumber: 26,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the statements regarding the various inflation indices published in the country:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Wholesale Price Index (WPI) does not represent the inflation in services",
+        },
+        {
+          label: "2",
+          text: "Consumer Price Index (CPI) represents the inflation in goods and services",
+        },
+        {
+          label: "3",
+          text: "CPI and WPI represent the inflation of imported goods also",
+        },
+        {
+          label: "4",
+          text: "CPI does not represent the inflation in capital and intermediate goods",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1, 2, 3 only",
+      "(c) 2, 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["WPI", "CPI", "inflation indices", "services", "imported goods"],
+    },
+  },
+  {
+    questionNumber: 27,
+    type: "multiple-choice-with-statements",
+    title:
+      "Wholesale Price Inflation (WPI) index includes price change of which of the following sectors:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Agriculture" },
+        { label: "2", text: "Mining" },
+        { label: "3", text: "Manufacturing" },
+        { label: "4", text: "Electricity" },
+      ],
+    },
+    options: [
+      "(a) 2 & 3 only",
+      "(b) 3 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "WPI",
+        "sectors",
+        "wholesale inflation",
+        "manufacturing",
+        "electricity",
+      ],
+    },
+  },
+];
+
+export const set5 = [
+  {
+    questionNumber: 28,
+    type: "simple-multiple-choice",
+    title:
+      "Central Government employee’s salary (dearness allowance) is linked with which CPI inflation index?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Identify the CPI inflation index used for DA calculation.",
+    },
+    options: [
+      "(a) CPI – combined",
+      "(b) CPI – Industrial Workers",
+      "(c) Both (a) & (b)",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "CPI",
+        "industrial workers",
+        "inflation index",
+        "dearness allowance",
+      ],
+    },
+  },
+  {
+    questionNumber: 29,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the current ‘Wholesale Price Index (WPI)’ series with base year 2011-12:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "The weights of the commodities in WPI basket are fixed till the revision/change in base year",
+        },
+        {
+          label: "2",
+          text: "The weights of the commodities in WPI basket are determined based on domestic production plus net of exports",
+        },
+        {
+          label: "3",
+          text: "The weights of the commodities in WPI basket are determined based on domestic production plus net of imports",
+        },
+        {
+          label: "4",
+          text: "‘Manufactured Products’ have the highest weight in WPI basket",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1, 2 & 4 only",
+      "(c) 1, 3 & 4 only",
+      "(d) 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["WPI", "base year", "weights", "manufactured products"],
+    },
+  },
+  {
+    questionNumber: 30,
+    type: "simple-multiple-choice",
+    title:
+      "If economic growth in 2022-23 is 8% and nominal growth in GDP over the same period is 12%, then ‘GDP Deflator’ in this period would be:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the correct value of GDP deflator given real and nominal growth.",
+    },
+    options: [
+      "(a) 4%",
+      "(b) Less than 4%",
+      "(c) More than 4%",
+      "(d) Can’t be calculated",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["GDP deflator", "real GDP", "nominal GDP", "inflation"],
+    },
+  },
+  {
+    questionNumber: 31,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statement with reference to ‘Income Elasticity of Demand’:",
+    prompt: "Which of the statements given above is/are correct?",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It measures the responsiveness of demand for a particular good to changes in consumer income.",
+        },
+        {
+          label: "2",
+          text: "Using this concept, it is possible to tell if a particular good represents a necessity or a luxury.",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["income elasticity", "demand", "necessity", "luxury"],
+    },
+  },
+  {
+    questionNumber: 32,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following is a common measure of degree of ‘openness of an economy’?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Choose the indicator most often used to measure openness.",
+    },
+    options: [
+      "(a) Exports and imports share in world GDP",
+      "(b) Balance of Payments as a percentage of GDP",
+      "(c) Trade balance as a percentage of GDP",
+      "(d) Exports and imports of goods and services as a percentage of GDP",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["openness", "trade", "GDP", "exports", "imports"],
+    },
+  },
+  {
+    questionNumber: 33,
+    type: "simple-multiple-choice",
+    title:
+      "The dependence of an economy (X) on another economy (Y) is measured as:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the correct measure of interdependence between economies.",
+    },
+    options: [
+      "(a) Ratio of imports of X from Y to total imports of X",
+      "(b) Ratio of imports of X from Y to GDP of X",
+      "(c) Bilateral trade of X with Y to X’s total trade",
+      "(d) Bilateral trade of X with Y to GDP of X",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["dependence", "bilateral trade", "imports", "GDP"],
+    },
+  },
+  {
+    questionNumber: 34,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding India:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Exports (of goods and services) as a percent of GDP has steadily decreased in the last decade",
+        },
+        {
+          label: "2",
+          text: "Imports (of goods and services) as a percent of GDP has steadily increased in the last decade",
+        },
+        {
+          label: "3",
+          text: "Trade as a percent of GDP has steadily decreased in the last decade",
+        },
+        {
+          label: "4",
+          text: "Services trade balance has consistently been positive in the last 10 years",
+        },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 1 & 2 only",
+      "(c) 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: ["India", "exports", "imports", "trade balance", "services"],
+    },
+  },
+];
+
+export const set6 = [
+  {
+    questionNumber: 35,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following commodities had the highest share in merchandise exports in 2024-25?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the commodity with the largest share in India’s merchandise exports for 2024-25.",
+    },
+    options: [
+      "(a) Petroleum products",
+      "(b) Gold and other metal jewellery",
+      "(c) Marine products",
+      "(d) Rice including basmati rice",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Macro fundamentals, GDP, Investment, Growth",
+      tags: [
+        "exports",
+        "merchandise trade",
+        "petroleum products",
+        "India trade 2024-25",
+      ],
+    },
+  },
+  {
+    questionNumber: 36,
+    type: "multiple-choice-with-statements",
+    title: "What were the reasons which led to bank nationalization of 1969?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Expansion of bank branches was mostly in urban areas",
+        },
+        {
+          label: "2",
+          text: "Agriculture and small-scale industries were not getting proper access to banking facilities",
+        },
+        {
+          label: "3",
+          text: "Bank credit was not utilized for financing projects according to Plan priorities",
+        },
+        {
+          label: "4",
+          text: "Easy and cheap availability of credit to a few industrial houses had encouraged growth of monopolies",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1, 2 & 3 only",
+      "(c) 2 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "bank nationalization",
+        "1969",
+        "agriculture credit",
+        "monopolies",
+      ],
+    },
+  },
+  {
+    questionNumber: 37,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following are part of ‘Seigniorage’?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Interest income on reserves kept with RBI for money creation",
+        },
+        {
+          label: "2",
+          text: "Interest accruing from bank balances kept with central bank as interest-free balances in order to meet the reserve requirements",
+        },
+        { label: "3", text: "Inflation tax" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) 3 only", "(d) 2 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["seigniorage", "RBI", "inflation tax", "money creation"],
+    },
+  },
+  {
+    questionNumber: 38,
+    type: "multiple-choice-with-statements",
+    title:
+      "If a country has ‘Pegged’ (fixed but adjustable) exchange rate, then consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Inflation in the country may make its exports less competitive",
+        },
+        {
+          label: "2",
+          text: "If the country devalues its currency in proportion to the inflation, then its exports may remain competitive",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["exchange rate", "pegged system", "inflation", "exports"],
+    },
+  },
+  {
+    questionNumber: 39,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding India’s present exchange rate system:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "RBI regulates the Rupee dollar rate" },
+        {
+          label: "2",
+          text: "RBI generally intervenes in the forex market indirectly",
+        },
+        { label: "3", text: "RBI regulates the forex market" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 3 only", "(d) 2 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["exchange rate", "RBI", "forex market", "rupee-dollar"],
+    },
+  },
+];
+
+export const set7 = [
+  {
+    questionNumber: 40,
+    type: "multiple-choice-with-statements",
+    title: "RBI intervenes in the foreign exchange market to:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "To contain the volatility in the rupee" },
+        {
+          label: "2",
+          text: "To set a price band for Rupee in terms of Dollar",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI",
+        "foreign exchange",
+        "rupee volatility",
+        "exchange rate management",
+      ],
+    },
+  },
+  {
+    questionNumber: 41,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding purchasing power parity (PPP) exchange rates:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "If two countries have same rate of inflation, their PPP exchange rates will remain constant",
+        },
+        {
+          label: "2",
+          text: "The prices of goods will be same in both the countries when converted at PPP exchange rate",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["PPP", "exchange rates", "inflation", "purchasing power"],
+    },
+  },
+  {
+    questionNumber: 42,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following statements are true in case 'the currency of two countries are at purchasing power parity':",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the correct relationship between PPP, nominal and real exchange rates.",
+    },
+    options: [
+      "(a) PPP exchange rate is equal to Nominal exchange rate",
+      "(b) PPP exchange rate is equal to Real exchange rate",
+      "(c) Nominal exchange rate is equal to Real exchange rate",
+      "(d) PPP, Nominal and Real exchange rates become equal",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "PPP",
+        "nominal exchange rate",
+        "real exchange rate",
+        "currency parity",
+      ],
+    },
+  },
+  {
+    questionNumber: 43,
+    type: "simple-multiple-choice",
+    title:
+      "If Mr. X has Rs. 20 crores in India and Mr. Y has $1 crore in US and whatever Mr. X can consume in India with Rs. 20 crores, the same items can be consumed by Mr. Y in $1 crore in US. If both of them, with their money, met at a place other than India and US then who will be richer?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify who would be richer outside India and US, given equal PPP consumption.",
+    },
+    options: [
+      "(a) Mr. X",
+      "(b) Mr. Y",
+      "(c) Equally rich",
+      "(d) Will depend on Nominal Exchange Rate",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "PPP",
+        "wealth comparison",
+        "nominal exchange rate",
+        "consumption parity",
+      ],
+    },
+  },
+  {
+    questionNumber: 44,
+    type: "simple-multiple-choice",
+    title:
+      "Increase in India's trade deficit may lead to which of the following:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the macroeconomic impact of a rising trade deficit.",
+    },
+    options: [
+      "(a) Increase in money supply in the economy",
+      "(b) Depreciation of rupee",
+      "(c) Appreciation of rupee",
+      "(d) Increase in GDP",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["trade deficit", "rupee depreciation", "money supply", "GDP"],
+    },
+  },
+  {
+    questionNumber: 45,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following situation will lead to depreciation of a country’s currency:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Choose the factor that leads to currency depreciation.",
+    },
+    options: [
+      "(a) Foreign Investment inflow",
+      "(b) Rise in the interest rate",
+      "(c) Increase in exports",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "currency depreciation",
+        "foreign investment",
+        "exports",
+        "interest rates",
+      ],
+    },
+  },
+  {
+    questionNumber: 46,
+    type: "simple-multiple-choice",
+    title:
+      "The export competitiveness of a country with its trading partners can be best measured through which of the following exchange rates:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Identify the correct measure of export competitiveness.",
+    },
+    options: [
+      "(a) Nominal Exchange Rate",
+      "(b) Real Exchange Rate",
+      "(c) Nominal Effective Exchange Rate",
+      "(d) Real Effective Exchange Rate",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["export competitiveness", "real exchange rate", "NEER", "REER"],
+    },
+  },
+  {
+    questionNumber: 47,
+    type: "simple-multiple-choice",
+    title:
+      "If rupee is appreciating in real terms with respect to US dollars, then:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the impact of real appreciation of rupee on exports.",
+    },
+    options: [
+      "(a) India’s exports competitiveness will decrease",
+      "(b) India’s exports competitive will increase",
+      "(c) India’s exports will be more competitive than US",
+      "(d) India’s exports will be less competitive than US",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "rupee appreciation",
+        "exports",
+        "real exchange rate",
+        "competitiveness",
+      ],
+    },
+  },
+];
+
+export const set8 = [
+  {
+    questionNumber: 48,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding India:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "If rupee is depreciating, then it leads to increase in cost of imports in dollars",
+        },
+        {
+          label: "2",
+          text: "If rupee is depreciating, then it leads to earning more dollars per unit of exports",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "rupee depreciation",
+        "imports",
+        "exports",
+        "exchange rate impact",
+      ],
+    },
+  },
+  {
+    questionNumber: 49,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following will be the impact of rupee depreciation?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Exports will become more competitive" },
+        {
+          label: "2",
+          text: "Exporters will fetch more dollars for the same amount of goods exported",
+        },
+        {
+          label: "3",
+          text: "Demand for domestic goods and services will increase",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "rupee depreciation",
+        "exports competitiveness",
+        "domestic demand",
+      ],
+    },
+  },
+  {
+    questionNumber: 50,
+    type: "multiple-choice-with-statements",
+    title:
+      "Suppose due to higher domestic inflation, rupee started depreciating but RBI used the Forex reserves to prevent the depreciation of Rupee. Then consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "REER will increase" },
+        { label: "2", text: "REER will decrease" },
+        { label: "3", text: "Exports will become more competitive" },
+        { label: "4", text: "No impact on trade competitiveness" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 4 only", "(c) 2 & 3 only", "(d) 1 and 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI",
+        "forex reserves",
+        "REER",
+        "inflation",
+        "trade competitiveness",
+      ],
+    },
+  },
+  {
+    questionNumber: 51,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the transactions happening at the international level for trade and financial flows:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "There is an international authority with the power to force the use of a particular currency",
+        },
+        {
+          label: "2",
+          text: "There is a basket of currencies which can only be used to settle international transactions",
+        },
+        {
+          label: "3",
+          text: "Currencies which maintain a stable purchasing power are generally accepted",
+        },
+        {
+          label: "4",
+          text: "Freely convertible currencies are generally accepted",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 4 only",
+      "(c) 3 & 4 only",
+      "(d) 2, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "international trade",
+        "financial flows",
+        "currencies",
+        "convertibility",
+      ],
+    },
+  },
+  {
+    questionNumber: 52,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding ‘internationalization of rupee’?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It means use of rupee for transactions between non-residents",
+        },
+        {
+          label: "2",
+          text: "It means use of rupee transactions between residents and non-residents",
+        },
+        {
+          label: "3",
+          text: "Military capability of a country plays role in internationalization of currency",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 1 & 2 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "rupee internationalization",
+        "currency transactions",
+        "residents",
+        "non-residents",
+      ],
+    },
+  },
+  {
+    questionNumber: 53,
+    type: "multiple-choice-with-statements",
+    title:
+      "Retail investors are allowed to directly access Govt. securities market. Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Retail investors will be allowed in both primary and secondary Govt. securities market",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "retail investors",
+        "government securities",
+        "primary market",
+        "secondary market",
+      ],
+    },
+  },
+];
+
+export const set9 = [
+  {
+    questionNumber: 53,
+    type: "multiple-choice-with-statements",
+    title:
+      "Retail investors are allowed to directly access Govt. securities market. Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Retail investors will be allowed in both primary and secondary Govt. securities market",
+        },
+        {
+          label: "2",
+          text: "Individuals participate in the non-competitive auctioning process of G-Securities in Primary Market",
+        },
+        {
+          label: "3",
+          text: "It will help in reducing the cost of borrowing for government",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 3 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "retail investors",
+        "government securities",
+        "primary market",
+        "secondary market",
+        "borrowing cost",
+      ],
+    },
+  },
+  {
+    questionNumber: 54,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding government securities market:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "G-Secs are issued through auctions conducted on E-Kuber which is the core banking solution platform of RBI",
+        },
+        {
+          label: "2",
+          text: "Negotiated Dealing System-Order Matching is a secondary market for G-Secs",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["G-Secs", "E-Kuber", "RBI", "secondary market"],
+    },
+  },
+  {
+    questionNumber: 55,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding ‘State Development Loans’:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It can be used under SLR by banks" },
+        { label: "2", text: "It is a tradable instrument" },
+        { label: "3", text: "RBI manages the public debt of states" },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 1 & 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["State Development Loans", "SLR", "RBI", "public debt"],
+    },
+  },
+  {
+    questionNumber: 56,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding ‘Cash Management Bills’?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Issued by Central Government and not by state governments",
+        },
+        { label: "2", text: "It is used to fund fiscal deficit" },
+        {
+          label: "3",
+          text: "It can be used for temporary mismatches in the cash flow of the government",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 3 only",
+      "(d) 1 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "cash management bills",
+        "government borrowing",
+        "fiscal deficit",
+        "temporary mismatch",
+      ],
+    },
+  },
+  {
+    questionNumber: 57,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the ‘Statutory Liquidity Ratio (SLR)’ maintained by Scheduled Commercial Banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It is maintained as per the RBI Act 1934" },
+        { label: "2", text: "Can be maintained as cash balance with RBI" },
+        {
+          label: "3",
+          text: "Cash Management Bills, Treasury Bills, Dated Securities and State Development Loans (SDL), all are considered as SLR securities",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 & 3 only", "(c) 2 only", "(d) 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["SLR", "RBI Act 1934", "banks", "government securities"],
+    },
+  },
+  {
+    questionNumber: 58,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding ‘ways and means’ advance:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is available for both Central and State governments",
+        },
+        {
+          label: "2",
+          text: "Government needs to pay interest on ways and means advance",
+        },
+        {
+          label: "3",
+          text: "It is to meet the temporary mismatches of receipts and payments",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "ways and means advance",
+        "central government",
+        "state government",
+        "temporary mismatch",
+      ],
+    },
+  },
+];
+
+export const set10 = [
+  {
+    questionNumber: 59,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding ‘Ways and Means Advance’:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It is used to fund government’s fiscal deficit" },
+        { label: "2", text: "It is a tradable government security" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "ways and means advance",
+        "fiscal deficit",
+        "government borrowing",
+        "tradable security",
+      ],
+    },
+  },
+  {
+    questionNumber: 60,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements will be true if the inflation in the economy is increasing?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Bond price will decrease" },
+        { label: "2", text: "Bondholders will lose" },
+        { label: "3", text: "The yield on bonds will increase" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["inflation", "bond prices", "yields", "investors"],
+    },
+  },
+  {
+    questionNumber: 61,
+    type: "multiple-choice-with-statements",
+    title:
+      "The price of government securities in India is influenced by which of the following?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Repo rate" },
+        { label: "2", text: "US Federal Bank benchmark interest rate" },
+        { label: "3", text: "Liquidity in the market" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 1 & 2 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["government securities", "repo rate", "US Fed", "liquidity"],
+    },
+  },
+  {
+    questionNumber: 62,
+    type: "simple-multiple-choice",
+    title:
+      "Which one of the following statements correctly describes the meaning of legal tender money?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Choose the correct definition of legal tender money.",
+    },
+    options: [
+      "(a) The money which is tendered in courts of law to defray the fee of legal cases",
+      "(b) The money which a creditor is under compulsion to accept in settlement of his claims",
+      "(c) The bank money in the form of cheques, drafts, bills of exchange, etc.",
+      "(d) The metallic money in circulation in a country",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["legal tender", "currency", "settlement", "creditor"],
+    },
+  },
+  {
+    questionNumber: 63,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Currencies and coins are fiat money" },
+        {
+          label: "2",
+          text: "Currencies do not have intrinsic value, but coins have",
+        },
+        { label: "3", text: "Currencies and coins are legal tenders" },
+        { label: "4", text: "Currency notes are guaranteed by Govt. of India" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 3 & 4 only",
+      "(d) 1, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["currency", "coins", "fiat money", "legal tender"],
+    },
+  },
+  {
+    questionNumber: 64,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "All the currency in circulation is the liability of RBI",
+        },
+        {
+          label: "2",
+          text: "All the currency in circulation is part of money supply",
+        },
+        {
+          label: "3",
+          text: "Notes and coins are circulated in the economy only through RBI",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["currency circulation", "RBI", "money supply", "liability"],
+    },
+  },
+  {
+    questionNumber: 65,
+    type: "simple-multiple-choice",
+    title: "Who has the authority to issue currency notes in India?",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the institution responsible for issuing currency notes in India.",
+    },
+    options: [
+      "(a) Central Government",
+      "(b) Ministry of Finance",
+      "(c) RBI",
+      "(d) RBI governor",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["currency issuance", "RBI", "India", "authority"],
+    },
+  },
+];
+
+export const set11 = [
+  {
+    questionNumber: 66,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding currency circulation in India:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Govt. of India has the sole right to mint coins" },
+        {
+          label: "2",
+          text: "The coins are issued for circulation only through RBI in terms of the RBI Act 1934",
+        },
+        {
+          label: "3",
+          text: "Coins can be issued up to the denomination of Rs. 1000 as per the Coinage Act 1906",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["currency circulation", "coinage act", "RBI", "minting rights"],
+    },
+  },
+  {
+    questionNumber: 67,
+    type: "simple-multiple-choice",
+    title:
+      "If new currency is being issued, then who has the authority to decide its ‘Denomination’:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the authority responsible for deciding the denomination of new currency.",
+    },
+    options: [
+      "(a) RBI Governor",
+      "(b) RBI Central Board of Directors",
+      "(c) Central Government",
+      "(d) Monetary Policy Committee",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["currency issuance", "denomination", "RBI", "central government"],
+    },
+  },
+  {
+    questionNumber: 68,
+    type: "simple-multiple-choice",
+    title:
+      "Who is the final authority in approving the design, form and material of bank notes:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Choose the final approving authority for the design, form, and material of bank notes.",
+    },
+    options: [
+      "(a) Governor of RBI",
+      "(b) Central Board of RBI",
+      "(c) Central Government",
+      "(d) Governor of RBI in consultation with Central Government",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["bank notes", "design approval", "central government", "RBI"],
+    },
+  },
+  {
+    questionNumber: 69,
+    type: "simple-multiple-choice",
+    title:
+      "Prime Minister, on 8th of Nov 2016, declared that the existing Rs. 500 and Rs. 1000 notes will not be legal tender. This was done under which of the following Act:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "Identify the statutory provision under which demonetization was carried out.",
+    },
+    options: [
+      "(a) RBI Act 1934",
+      "(b) Banking Regulation Act 1949",
+      "(c) Payment and Settlement Systems Act 2007",
+      "(d) Does not require any statutory backing",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "demonetization",
+        "RBI Act 1934",
+        "banking regulation",
+        "legal tender",
+      ],
+    },
+  },
+  {
+    questionNumber: 70,
+    type: "multiple-choice-with-statements",
+    title: "RBI targets the growth of money supply in the economy based on:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Expected real GDP growth" },
+        { label: "2", text: "Normal level of inflation" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI", "money supply", "GDP growth", "inflation targeting"],
+    },
+  },
+];
+
+export const set12 = [
+  {
+    questionNumber: 71,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following statements are true regarding RBI:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "As per the RBI Act 1934, RBI is bound to undertake the receipt and payments and other banking operations of the central government",
+        },
+        {
+          label: "2",
+          text: "As per the RBI Act 1934, RBI is obliged to act as banker to State governments",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI Act 1934",
+        "government banker",
+        "central government",
+        "state government",
+      ],
+    },
+  },
+  {
+    questionNumber: 72,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding 'Agency Banks' of RBI:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "RBI Act 1934 allows RBI to appoint agency banks" },
+        {
+          label: "2",
+          text: "Scheduled payment banks and small finance banks can act as ‘Agency Banks’",
+        },
+        {
+          label: "3",
+          text: "Only those private banks which are of certain size are allowed to act as ‘Agency Banks’",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1 & 3 only",
+      "(d) 2 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "agency banks",
+        "RBI Act 1934",
+        "scheduled banks",
+        "private banks",
+      ],
+    },
+  },
+];
+
+export const set13 = [
+  {
+    questionNumber: 73,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following functions are part of the Reserve Bank of India (RBI) acting as Banker to Banks?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Enabling banks to maintain their accounts with RBI for statutory reserve requirements",
+        },
+        {
+          label: "2",
+          text: "Enabling settlement of interbank transfer of funds",
+        },
+        {
+          label: "3",
+          text: "RBI provides short term loans and advances to banks",
+        },
+        { label: "4", text: "Acting as lender of last resort" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI",
+        "banker to banks",
+        "statutory reserve",
+        "interbank settlement",
+        "lender of last resort",
+      ],
+    },
+  },
+  {
+    questionNumber: 74,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding RBI acting as 'lender of last resort' for banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is done to prevent possible failure of the banks and to protect the interest of the depositors",
+        },
+        {
+          label: "2",
+          text: "RBI does it only if the troubled financial institution has exhausted all the resources it can obtain from the market and from the RBI’s regular liquidity facilities like LAF, MSF",
+        },
+        { label: "3", text: "To ensure financial stability in the economy" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI", "lender of last resort", "financial stability", "banks"],
+    },
+  },
+  {
+    questionNumber: 75,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding lender of last resort?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is provided to banks which have been declared bankrupt",
+        },
+        { label: "2", text: "RBI provides funds for long period" },
+        {
+          label: "3",
+          text: "RBI provides fund against collateral and at a penal rate",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 & 3 only", "(c) 3 only", "(d) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI", "lender of last resort", "collateral", "penal rate"],
+    },
+  },
+  {
+    questionNumber: 76,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following functions are part of the RBI acting as Banker to Central Government?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "RBI maintains the account for the various central government funds like Consolidated Fund of India, Contingency Fund and Public Account of India",
+        },
+        {
+          label: "2",
+          text: "RBI acts as advisor to the government on monetary and banking related matters",
+        },
+        {
+          label: "3",
+          text: "RBI provides Ways and Means Advances to the government",
+        },
+        {
+          label: "4",
+          text: "RBI floats loan and manages them on behalf of the government",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI",
+        "central government",
+        "consolidated fund",
+        "ways and means advance",
+      ],
+    },
+  },
+  {
+    questionNumber: 77,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding 'Notice Money':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is a money market instrument for overnight lending",
+        },
+        {
+          label: "2",
+          text: "It is issued by commercial banks and other financial institutions",
+        },
+        { label: "3", text: "It is generally a secured instrument" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 2 only", "(d) 2 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "notice money",
+        "money market",
+        "commercial banks",
+        "overnight lending",
+      ],
+    },
+  },
+  {
+    questionNumber: 78,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding 'Commercial Papers':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It is an unsecured debt instrument" },
+        { label: "2", text: "It is a short-term money market instrument" },
+        { label: "3", text: "NBFCs issue commercial papers" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 3 only",
+      "(c) 2 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["commercial papers", "NBFCs", "money market", "unsecured debt"],
+    },
+  },
+];
+
+export const set14 = [
+  {
+    questionNumber: 79,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Certificate of Deposits':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It is not a tradable instrument" },
+        { label: "2", text: "It is a secured instrument issued by banks" },
+        { label: "3", text: "It is a money market instrument" },
+      ],
+    },
+    options: ["(a) 1 & 2 only", "(b) 2 only", "(c) 2 & 3 only", "(d) 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "certificate of deposits",
+        "money market",
+        "banks",
+        "tradable instruments",
+      ],
+    },
+  },
+  {
+    questionNumber: 80,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following are instrument/s of money market?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Cash management bills" },
+        { label: "2", text: "Treasury bills" },
+        { label: "3", text: "Certificate of Deposits" },
+        { label: "4", text: "State Development Loans" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 4 only",
+      "(d) 1, 2 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "money market",
+        "treasury bills",
+        "certificate of deposits",
+        "cash management bills",
+      ],
+    },
+  },
+  {
+    questionNumber: 81,
+    type: "multiple-choice-with-statements",
+    title:
+      "Mergers and Acquisitions of commercial banks may require approval of which of the following agency/ies?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Reserve Bank of India (RBI)" },
+        { label: "2", text: "Competition Commission of India (CCI)" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["mergers", "acquisitions", "RBI", "CCI", "commercial banks"],
+    },
+  },
+  {
+    questionNumber: 82,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the 'Financial Services Institutions Bureau (FSIB)' constituted in 2022:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is responsible for appointment of heads in PSBs and Financial Institutions",
+        },
+        {
+          label: "2",
+          text: "It helps PSBs in developing strategies and capital raising plans",
+        },
+        {
+          label: "3",
+          text: "It has been constituted under Banking Regulation Act 1949",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "FSIB",
+        "PSBs",
+        "financial institutions",
+        "appointments",
+        "banking regulation act",
+      ],
+    },
+  },
+  {
+    questionNumber: 83,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Financial Services Institutions Bureau (FSIB):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It selects the chiefs of LIC, NABARD and public financial institutions",
+        },
+        {
+          label: "2",
+          text: "The persons selected by the FSIB require approval of Appointments Committee of the Cabinet (ACC)",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["FSIB", "LIC", "NABARD", "appointments committee of cabinet"],
+    },
+  },
+  {
+    questionNumber: 84,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the insurance cover provided to depositors by Deposit Insurance and Credit Guarantee Corporation (DICGC):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "All commercial banks and urban cooperative banks have to register with DICGC for providing insurance to depositors",
+        },
+        { label: "2", text: "RBI incurs the insurance premium burden" },
+        { label: "3", text: "Government incurs the insurance premium burden" },
+        {
+          label: "4",
+          text: "DICGC provides insurance only in case the bank has gone bankrupt",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 3 only", "(d) 1 & 4 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "DICGC",
+        "deposit insurance",
+        "RBI",
+        "commercial banks",
+        "insurance cover",
+      ],
+    },
+  },
+];
+
+export const set15 = [
+  {
+    questionNumber: 85,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding payment banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "They can open demand and time deposit accounts both",
+        },
+        { label: "2", text: "They are set up as differentiated banks" },
+        {
+          label: "3",
+          text: "They may act as Business Correspondents for other banks",
+        },
+        {
+          label: "4",
+          text: "They will provide payments / remittance services to migrant labour workforce and small businesses",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 4 only",
+      "(b) 1 & 2 only",
+      "(c) 2, 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "payment banks",
+        "differentiated banks",
+        "business correspondents",
+        "remittance services",
+      ],
+    },
+  },
+  {
+    questionNumber: 86,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'India Post Payment Bank':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It allows demand and fixed deposit both" },
+        { label: "2", text: "It allows savings and current account both" },
+        { label: "3", text: "It is a public sector company" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["India Post Payment Bank", "public sector", "deposit accounts"],
+    },
+  },
+  {
+    questionNumber: 87,
+    type: "multiple-choice-with-statements",
+    title:
+      "What is the purpose of setting up of Small Finance Banks (SFBs) in India?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "To supply credit to small business units" },
+        { label: "2", text: "To supply credit to small and marginal farmers" },
+        {
+          label: "3",
+          text: "To encourage young entrepreneurs to set up business particularly in rural areas",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "small finance banks",
+        "SFBs",
+        "credit",
+        "rural economy",
+        "entrepreneurs",
+      ],
+    },
+  },
+  {
+    questionNumber: 88,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding Cooperative Banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "All cooperative banks are under dual regulation of RBI and government",
+        },
+        {
+          label: "2",
+          text: "RBI regulates the cooperative banks under Banking Regulation Act 1949",
+        },
+        { label: "3", text: "All cooperative banks are supervised by NABARD" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) 2 & 3 only", "(d) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["cooperative banks", "RBI", "NABARD", "banking regulation act"],
+    },
+  },
+  {
+    questionNumber: 89,
+    type: "multiple-choice-with-statements",
+    title:
+      "NABARD provides refinance to which of the following types of financial institutions:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Commercial Banks" },
+        { label: "2", text: "Regional Rural Banks" },
+        {
+          label: "3",
+          text: "State Cooperative Banks & Land Development Banks",
+        },
+        { label: "4", text: "Non-Banking Financial Companies" },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "NABARD",
+        "refinance",
+        "commercial banks",
+        "RRBs",
+        "cooperative banks",
+        "NBFCs",
+      ],
+    },
+  },
+];
+
+export const set17 = [
+  {
+    questionNumber: 90,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following are the sources of finance for National Bank for Agriculture and Rural Development (NABARD)?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "RBI" },
+        { label: "2", text: "Borrowing from commercial banks" },
+        {
+          label: "3",
+          text: "Issuing bonds which are fully serviced by Govt. of India",
+        },
+        { label: "4", text: "Foreign currency borrowings" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 3 only", "(c) 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "NABARD",
+        "finance sources",
+        "RBI",
+        "commercial banks",
+        "bonds",
+        "foreign borrowings",
+      ],
+    },
+  },
+  {
+    questionNumber: 91,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding MUDRA Bank:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It provides direct lending to small entrepreneurs",
+        },
+        {
+          label: "2",
+          text: "MUDRA loans are available to small and marginal farmers",
+        },
+        {
+          label: "3",
+          text: "MUDRA loan is available for manufacturing, trading and service activities",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 & 3 only", "(c) 3 only", "(d) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MUDRA", "small entrepreneurs", "loans", "MSMEs"],
+    },
+  },
+  {
+    questionNumber: 92,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding National Housing Bank (NHB):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "NHB regulates Housing finance companies" },
+        {
+          label: "2",
+          text: "NHB is owned by Govt. of India and regulated by RBI",
+        },
+        {
+          label: "3",
+          text: "NHB provides direct finance for individual housing loans",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 2 only", "(d) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["NHB", "housing finance", "RBI", "Govt of India"],
+    },
+  },
+  {
+    questionNumber: 93,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding Housing Finance Companies (HFC)?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "HFCs are under direct regulation of RBI" },
+        {
+          label: "2",
+          text: "HFCs are a category of Non-Banking Financial Companies (NBFCs)",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) Both 1 & 2"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["housing finance companies", "HFC", "NBFC", "RBI"],
+    },
+  },
+  {
+    questionNumber: 94,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Peer to Peer Lending Platforms' in India:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "They are regulated by RBI as Non-Banking Financial Companies",
+        },
+        { label: "2", text: "They can lend on their own" },
+        { label: "3", text: "They provide credit guarantee" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["peer to peer lending", "RBI", "NBFC", "credit guarantee"],
+    },
+  },
+  {
+    questionNumber: 95,
+    type: "multiple-choice-with-statements",
+    title: "NBFCs raise their resources from which of the following:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Loans from Banks" },
+        { label: "2", text: "By issuance of bonds in the financial markets" },
+        { label: "3", text: "Money market" },
+        { label: "4", text: "Through External Commercial Borrowing (ECB)" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["NBFC", "resource mobilization", "ECB", "money market"],
+    },
+  },
+  {
+    questionNumber: 96,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following are risk factors for NBFCs in their lending process?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Relying on short term financing to fund long-term investments",
+        },
+        { label: "2", text: "Asset liability mismatch (ALM)" },
+        { label: "3", text: "Rollover risk of commercial papers" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2, 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "NBFC",
+        "risk factors",
+        "asset liability mismatch",
+        "commercial papers",
+      ],
+    },
+  },
+];
+
+export const set18 = [
+  {
+    questionNumber: 97,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding ‘Digital Banking Units (DBUs)’ launched by the Scheduled Commercial Banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is fixed point business unit / hub housing certain minimum digital infrastructure for delivering digital banking products & services",
+        },
+        {
+          label: "2",
+          text: "It offers banking services in both self-service and assisted mode",
+        },
+        { label: "3", text: "It provides services without requiring paper" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "digital banking",
+        "DBU",
+        "scheduled commercial banks",
+        "paperless banking",
+      ],
+    },
+  },
+  {
+    questionNumber: 98,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Real Estate Investment Trusts (REITs)':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "They are regulated by respective Real Estate Regulatory Authorities (RERA) of every State",
+        },
+        {
+          label: "2",
+          text: "It will make real estate sector accessible to small investors",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["REITs", "real estate", "small investors", "RERA"],
+    },
+  },
+  {
+    questionNumber: 99,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding 'Angel Investors':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Angel investors generally invest their own money",
+        },
+        {
+          label: "2",
+          text: "They invest in small start-ups and entrepreneurs",
+        },
+        {
+          label: "3",
+          text: "They provide more favourable terms and conditions as compared to other lenders",
+        },
+        { label: "4", text: "Angel investment is regulated by SEBI" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["angel investors", "startups", "SEBI", "entrepreneurs"],
+    },
+  },
+  {
+    questionNumber: 100,
+    type: "simple-multiple-choice",
+    title: "Consider the following statements regarding 'Anchor Investors':",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText: "Identify the correct description of anchor investors.",
+    },
+    options: [
+      "(a) They are high net worth individual investors who invest in startups",
+      "(b) They are individual investors investing first time in the stock market",
+      "(c) They are institutional investors who invest in startups and unlisted companies",
+      "(d) They are institutional investors who are invited to invest just before the initial public offer",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "anchor investors",
+        "IPO",
+        "institutional investors",
+        "stock market",
+      ],
+    },
+  },
+  {
+    questionNumber: 101,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Alternative Investment Fund' (AIF):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Its privately pooled investment vehicle established in India and regulated by SEBI",
+        },
+        {
+          label: "2",
+          text: "It collects fund from sophisticated investors from India or Foreign",
+        },
+        { label: "3", text: "Venture capital comes under AIF" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["AIF", "alternative investment fund", "SEBI", "venture capital"],
+    },
+  },
+];
+
+export const set19 = [
+  {
+    questionNumber: 102,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding the term 'Crowd funding'?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is a method of financing through the internet/social media",
+        },
+        {
+          label: "2",
+          text: "Small amounts of money are raised from large number of investors",
+        },
+        { label: "3", text: "It is also referred as marketplace financing" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["crowdfunding", "internet finance", "marketplace financing"],
+    },
+  },
+  {
+    questionNumber: 103,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Exchange Traded Funds (ETF)':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "ETFs are traded like stocks and can be bought and sold throughout the day",
+        },
+        { label: "2", text: "ETFs can be used as a vehicle for disinvestment" },
+        {
+          label: "3",
+          text: "ETFs offers the benefit of diversification of risks",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "ETFs",
+        "exchange traded funds",
+        "stocks",
+        "disinvestment",
+        "diversification",
+      ],
+    },
+  },
+  {
+    questionNumber: 104,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding 'impact bonds':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Subscribed by government" },
+        { label: "2", text: "Private sector finances the bond issuance" },
+        { label: "3", text: "Repayment is based on agreed upon outcomes" },
+        {
+          label: "4",
+          text: "This instrument is used to fund social and development initiatives",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 & 3 only",
+      "(c) 2, 3 & 4 only",
+      "(d) 1 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "impact bonds",
+        "development finance",
+        "government bonds",
+        "social initiatives",
+      ],
+    },
+  },
+  {
+    questionNumber: 105,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding 'surety bonds':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Insurance companies are allowed to issue surety bonds for infrastructure projects",
+        },
+        {
+          label: "2",
+          text: "It can be used as a substitute for bank guarantee",
+        },
+        { label: "3", text: "It will reduce indirect cost for contractors" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "surety bonds",
+        "infrastructure projects",
+        "bank guarantee",
+        "insurance companies",
+      ],
+    },
+  },
+  {
+    questionNumber: 106,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the 'India International Bullion Exchange (IIBX)':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It has been launched in the GIFT City in Gandhinagar",
+        },
+        {
+          label: "2",
+          text: "It is the first such bullion exchange in the country to trade physical gold",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["IIBX", "bullion exchange", "GIFT City", "gold trade"],
+    },
+  },
+  {
+    questionNumber: 107,
+    type: "simple-multiple-choice",
+    title:
+      "Consider the following statements regarding the term of appointment of RBI Governor:",
+    prompt: "Select the correct answer:",
+    content: {
+      simpleText:
+        "What is the fixed term and eligibility for reappointment of RBI Governor as per Central Government?",
+    },
+    options: [
+      "(a) As fixed by the Central Government while appointing, not exceeding five years and eligible for re-appointment",
+      "(b) As fixed by the Central Government while appointing, not exceeding three years and eligible for re-appointment",
+      "(c) As fixed by the Central Government while appointing, not exceeding five years and not eligible for re-appointment",
+      "(d) As fixed by the Central Government while appointing, not exceeding three years and not eligible for re-appointment",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI Governor", "appointment", "term", "central government"],
+    },
+  },
+  {
+    questionNumber: 108,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Banks require prior approval of RBI for appointment of directors",
+        },
+        {
+          label: "2",
+          text: "Management of Public Sector banks is under dual regulation of Central Govt. & RBI",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "public sector banks",
+        "RBI regulation",
+        "directors approval",
+        "dual regulation",
+      ],
+    },
+  },
+];
+
+export const set20 = [
+  {
+    questionNumber: 108,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Banks require prior approval of RBI for appointment of directors",
+        },
+        {
+          label: "2",
+          text: "Management of Public Sector banks is under dual regulation of Central Govt. & RBI",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI regulation",
+        "public sector banks",
+        "directors appointment",
+        "dual regulation",
+      ],
+    },
+  },
+  {
+    questionNumber: 109,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "RBI is a wholly owned by Govt. of India" },
+        {
+          label: "2",
+          text: "RBI's surplus transfer to the central government has steadily decreased in the last 5 years",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI ownership", "surplus transfer", "central government"],
+    },
+  },
+  {
+    questionNumber: 110,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the 'Economic Capital Framework' of RBI:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "RBI Act 1934 specifies to keep some contingency buffer",
+        },
+        {
+          label: "2",
+          text: "RBI Act 1934 specifies that the surplus needs to be transferred to Government of India",
+        },
+        {
+          label: "3",
+          text: "The transfer of surplus to Govt. of India may result in inflation",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "RBI Act 1934",
+        "economic capital framework",
+        "contingency buffer",
+        "surplus transfer",
+      ],
+    },
+  },
+  {
+    questionNumber: 111,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding liquidity crisis in the debt markets:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It may be caused due to defaults in the debt market",
+        },
+        {
+          label: "2",
+          text: "It may be caused due to FPIs running out of Indian markets",
+        },
+        { label: "3", text: "It may result in hardening of interest rates" },
+        { label: "4", text: "RBI may do OMO to resolve the liquidity crisis" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["liquidity crisis", "debt markets", "FPI", "OMO", "RBI"],
+    },
+  },
+  {
+    questionNumber: 112,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following could be the after effects of demonetization?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "RBI's liability would reduce to the extent the old notes does not come to the banking system",
+        },
+        {
+          label: "2",
+          text: "Transfer of wealth from holders of illicit black money to the public sector",
+        },
+        { label: "3", text: "Decrease in liquidity" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["demonetization", "liquidity", "black money", "RBI liability"],
+    },
+  },
+  {
+    questionNumber: 113,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following is part of Monetary Base of an economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Currency notes and coins with the public" },
+        { label: "2", text: "Vault cash of commercial banks" },
+        { label: "3", text: "Deposits of commercial banks with RBI" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["monetary base", "currency", "vault cash", "RBI deposits"],
+    },
+  },
+  {
+    questionNumber: 114,
+    type: "multiple-choice-with-statements",
+    title: "Reserves of commercial banks includes which of the following:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "All deposits of Public" },
+        { label: "2", text: "Government securities held by banks" },
+        { label: "3", text: "Cash held by banks in their vaults" },
+        { label: "4", text: "Money deposited with RBI" },
+      ],
+    },
+    options: [
+      "(a) 2 & 3 only",
+      "(b) 2, 3 & 4 only",
+      "(c) 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "commercial banks",
+        "reserves",
+        "government securities",
+        "RBI deposits",
+      ],
+    },
+  },
+  {
+    questionNumber: 115,
+    type: "multiple-choice-with-statements",
+    title:
+      "Money can be created in the economy in which of the following ways?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Full reserve banking" },
+        { label: "2", text: "Fractional reserve banking" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "money creation",
+        "fractional reserve banking",
+        "full reserve banking",
+      ],
+    },
+  },
+  {
+    questionNumber: 116,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding Money Multiplier:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It increases with increase in reserve requirements of banks",
+        },
+        {
+          label: "2",
+          text: "It decreases with increase in reserve requirements of banks",
+        },
+        { label: "3", text: "It increases with Monetary Base" },
+        { label: "4", text: "It decreases with Monetary Base" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) 2 & 3 only", "(d) 2 & 4 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["money multiplier", "monetary base", "reserve requirements"],
+    },
+  },
+  {
+    questionNumber: 117,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following will increase 'Monetary Base'?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Creation of more credit by banks" },
+        { label: "2", text: "Public withdrawing more cash from the banks" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["monetary base", "credit creation", "public withdrawals"],
+    },
+  },
+  {
+    questionNumber: 118,
+    type: "multiple-choice-with-statements",
+    title: "Money Multiplier depends on which of the following?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Currency deposit ratio" },
+        { label: "2", text: "Reserve deposit ratio" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "money multiplier",
+        "currency deposit ratio",
+        "reserve deposit ratio",
+      ],
+    },
+  },
+  {
+    questionNumber: 119,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding 'money supply':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It can be increased by increasing the money multiplier",
+        },
+        {
+          label: "2",
+          text: "It can be increased by increasing the monetary base",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["money supply", "monetary base", "money multiplier"],
+    },
+  },
+  {
+    questionNumber: 120,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Open Market Operations':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It changes the monetary base" },
+        { label: "2", text: "It changes the money supply" },
+        { label: "3", text: "It changes the money multiplier" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "open market operations",
+        "OMO",
+        "money supply",
+        "monetary base",
+        "money multiplier",
+      ],
+    },
+  },
+];
+
+export const set21 = [
+  {
+    questionNumber: 121,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following is not part of the money supply in the economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Money lying with the government" },
+        {
+          label: "2",
+          text: "Deposits of commercial banks with other commercial banks",
+        },
+        { label: "3", text: "Money lying with the Central bank" },
+        { label: "4", text: "Deposits of public with commercial banks" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 4 only",
+      "(c) 1 & 2 only",
+      "(d) 1, 2 & 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["money supply", "commercial banks", "central bank"],
+    },
+  },
+  {
+    questionNumber: 122,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following are part of money supply in the economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Cash and deposits of public" },
+        { label: "2", text: "Corporate bonds held by public" },
+        { label: "3", text: "Government securities held by public" },
+        { label: "4", text: "Shares held by public" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1, 2 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "money supply",
+        "cash",
+        "government securities",
+        "corporate bonds",
+      ],
+    },
+  },
+  {
+    questionNumber: 123,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding 'Open Market Operations (OMO)':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Outright OMOs are directed at influencing enduring liquidity",
+        },
+        {
+          label: "2",
+          text: "Liquidity Adjustment Facility (LAF) OMO operations target the temporary liquidity in the system",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["OMO", "open market operations", "liquidity", "RBI"],
+    },
+  },
+  {
+    questionNumber: 124,
+    type: "multiple-choice-with-statements",
+    title:
+      "If RBI is pumping more money in the economy, then which of the following is true?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Monetary base is increasing" },
+        { label: "2", text: "Money supply is increasing" },
+        { label: "3", text: "Money Multiplier is increasing" },
+        { label: "4", text: "RBI's balance sheet is increasing" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) 1, 2 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["RBI", "monetary base", "money supply", "balance sheet"],
+    },
+  },
+  {
+    questionNumber: 125,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following actions will lead to immediate increase in money supply in the economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Individuals purchasing government securities in the primary market",
+        },
+        {
+          label: "2",
+          text: "Banks purchasing government securities in the primary market",
+        },
+        {
+          label: "3",
+          text: "Banks purchasing government securities from the public in the secondary market",
+        },
+        {
+          label: "4",
+          text: "Long Term Repo Operation by RBI to commercial banks",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 3 only", "(d) 3 & 4 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["money supply", "RBI", "repo operations", "government securities"],
+    },
+  },
+  {
+    questionNumber: 126,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Open Market Operation is a monetary policy tool" },
+        {
+          label: "2",
+          text: "Open Market Operations take place in secondary market",
+        },
+        { label: "3", text: "Sterilization is a monetary policy tool" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["OMO", "monetary policy", "sterilization", "secondary market"],
+    },
+  },
+  {
+    questionNumber: 127,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following are part of Liquidity Adjustment Facility (LAF)?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Marginal Standing Facility" },
+        { label: "2", text: "Standing Deposit Facility" },
+        { label: "3", text: "Long term repo operation" },
+        { label: "4", text: "Overnight repo operation" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["LAF", "liquidity adjustment facility", "RBI", "repo operations"],
+    },
+  },
+  {
+    questionNumber: 128,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statement regarding 'Market Stabilization Bonds' (MSBs):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "These are Treasury bills and Dated securities" },
+        { label: "2", text: "RBI is empowered to issue MSBs" },
+        {
+          label: "3",
+          text: "The interest payment on these bonds is made by government from its budgetary resources",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 2 only", "(c) 3 only", "(d) All of the above"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MSBs", "market stabilization bonds", "treasury bills", "RBI"],
+    },
+  },
+  {
+    questionNumber: 129,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Cash Reserve Ratio (CRR):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It helps in securing monetary stability and managing liquidity in the economy",
+        },
+        {
+          label: "2",
+          text: "RBI can change the CRR to any level without any floor or ceiling limit",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["CRR", "cash reserve ratio", "RBI", "monetary stability"],
+    },
+  },
+  {
+    questionNumber: 130,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Cash Reserve Ratio (CRR) kept with RBI by commercial banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It ensures safety to the people's deposits in banks",
+        },
+        { label: "2", text: "It ensures solvency of banks" },
+        { label: "3", text: "It increases the cost of funds for the banks" },
+        { label: "4", text: "Banks earn interest on CRR" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["CRR", "cash reserve ratio", "commercial banks", "RBI"],
+    },
+  },
+  {
+    questionNumber: 131,
+    type: "multiple-choice-with-statements",
+    title:
+      "In the context of Indian economy, which of the following is/are the purpose/purposes of 'Statutory Reserve Requirements'?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "To enable the Central Bank to control the amount of advances the banks can create",
+        },
+        {
+          label: "2",
+          text: "To make the people's deposits with banks safe and liquid",
+        },
+        {
+          label: "3",
+          text: "To prevent the commercial banks from making excessive profits",
+        },
+        {
+          label: "4",
+          text: "To force the banks to have sufficient vault cash to meet their day-to-day requirements",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) 1, 2, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "statutory reserve requirements",
+        "RBI",
+        "banking safety",
+        "monetary policy",
+      ],
+    },
+  },
+  {
+    questionNumber: 132,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the 'Monetary Policy Framework' that exists between Govt. of India and Reserve Bank of India:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "The primary objective of Monetary Policy is price stability",
+        },
+        {
+          label: "2",
+          text: "There is a flexible target for inflation that RBI needs to achieve",
+        },
+        { label: "3", text: "Monetary Policy Framework is operated by RBI" },
+        {
+          label: "4",
+          text: "If RBI fails to achieve the target, it needs to submit report to the Govt. of India stating reasons of failure",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 3 only",
+      "(c) 1, 2 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "monetary policy framework",
+        "RBI",
+        "inflation target",
+        "price stability",
+      ],
+    },
+  },
+  {
+    questionNumber: 133,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the 'Monetary Policy Framework':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "The operating target is the money market rate" },
+        {
+          label: "2",
+          text: "RBI tries to keep the operating target around the government securities yield rate",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "hard",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: [
+        "monetary policy framework",
+        "RBI",
+        "money market",
+        "government securities",
+      ],
+    },
+  },
+];
+
+export const set22 = [
+  {
+    questionNumber: 134,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding the Monetary Policy Committee (MPC)?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It has the authority to decide repo rate, CRR, SLR",
+        },
+        { label: "2", text: "Its decision is binding on RBI" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MPC", "repo rate", "RBI", "monetary policy"],
+    },
+  },
+  {
+    questionNumber: 135,
+    type: "multiple-choice-with-statements",
+    title:
+      "While deciding the repo rate, Monetary Policy Committee may keep in mind the following factors:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Inflation" },
+        { label: "2", text: "Economic Growth" },
+        { label: "3", text: "Rupee appreciation/depreciation" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 and 2 only",
+      "(c) All of the above",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MPC", "repo rate", "inflation", "economic growth", "rupee"],
+    },
+  },
+  {
+    questionNumber: 136,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following statements regarding MPC and its members:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Three members are appointed by Central Government and three are appointed by Central Board of RBI",
+        },
+        {
+          label: "2",
+          text: "The three members appointed by the Central Government hold office for a period of four years",
+        },
+        {
+          label: "3",
+          text: "There should be at least six meetings of the MPC in a year",
+        },
+      ],
+    },
+    options: ["(a) 1 & 2 only", "(b) 1 & 3 only", "(c) 2 only", "(d) 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MPC", "appointments", "RBI Act", "monetary policy"],
+    },
+  },
+  {
+    questionNumber: 137,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding Marginal Standing Facility (MSF)?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Scheduled commercial banks borrow additional amount for overnight",
+        },
+        {
+          label: "2",
+          text: "The banks can dip into their SLR portfolio to borrow from RBI",
+        },
+        {
+          label: "3",
+          text: "It provides a safety valve against unanticipated liquidity shocks",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1 & 3 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["MSF", "RBI", "liquidity", "overnight borrowing"],
+    },
+  },
+  {
+    questionNumber: 138,
+    type: "multiple-choice-with-statements",
+    title: "Consider the following instruments:",
+    prompt:
+      "Which of the following facility/instruments is/are available at RBI's discretion and not banks?",
+    content: {
+      statements: [
+        { label: "1", text: "Reverse Repo Rate" },
+        { label: "2", text: "Marginal Standing Facility" },
+        { label: "3", text: "Standing Deposit Facility" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 and 2 only",
+      "(c) 3 only",
+      "(d) 2 and 3 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["reverse repo", "MSF", "standing deposit facility", "RBI"],
+    },
+  },
+  {
+    questionNumber: 139,
+    type: "simple-multiple-choice",
+    title:
+      "The 'Consumer Confidence Survey' in India is conducted by which of the following?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      simpleText:
+        "The 'Consumer Confidence Survey' in India is conducted by which of the following?",
+    },
+    options: [
+      "(a) Reserve Bank of India",
+      "(b) National Statistical Office (NSO)",
+      "(c) Department of Consumer Affairs",
+      "(d) Ministry of Labour & Employment",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["consumer confidence survey", "RBI", "surveys"],
+    },
+  },
+  {
+    questionNumber: 140,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following agencies conducts 'inflation expectation survey' of households in India?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      simpleText:
+        "Which of the following agencies conducts 'inflation expectation survey' of households in India?",
+    },
+    options: [
+      "(a) Ministry of Statistics and Programme Implementation",
+      "(b) National Statistical Office",
+      "(c) Reserve Bank of India",
+      "(d) Ministry of Finance",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["inflation expectation survey", "RBI", "households"],
+    },
+  },
+  {
+    questionNumber: 141,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following situations may lead to increase in repo rate by RBI?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Inflation in the economy is high" },
+        { label: "2", text: "Inflation expectation in the economy is high" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["repo rate", "RBI", "inflation"],
+    },
+  },
+  {
+    questionNumber: 142,
+    type: "simple-multiple-choice",
+    title:
+      "If the US Central Bank raises their interest rate, then it may lead to which of the following in the Indian economy:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      simpleText:
+        "If the US Central Bank raises their interest rate, it may lead to which of the following in India?",
+    },
+    options: [
+      "(a) Rupee depreciation",
+      "(b) Rupee appreciation",
+      "(c) Investors moving to India",
+      "(d) Increase in money supply",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["US Fed", "rupee depreciation", "capital flows"],
+    },
+  },
+  {
+    questionNumber: 143,
+    type: "multiple-choice-with-statements",
+    title: "Which of the following RBI may do to curb the rupee depreciation?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Allowing importers to directly buy foreign currency from RBI",
+        },
+        { label: "2", text: "Increasing the repo rate" },
+        { label: "3", text: "Selling dollars in foreign exchange market" },
+        { label: "4", text: "Buying dollars in foreign exchange market" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 & 3 only",
+      "(c) 1, 2 & 3 only",
+      "(d) 1, 2 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["rupee depreciation", "RBI", "forex market"],
+    },
+  },
+  {
+    questionNumber: 144,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statement regarding the term 'Operation Twist':",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It is a kind of open market operation" },
+        {
+          label: "2",
+          text: "RBI pumps additional money into the system to increase liquidity",
+        },
+        { label: "3", text: "It helps in monetary transmission" },
+      ],
+    },
+    options: ["(a) 1 & 2 only", "(b) 2 & 3 only", "(c) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["Operation Twist", "OMO", "RBI"],
+    },
+  },
+  {
+    questionNumber: 145,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of following statements are true regarding 'Long Term Repo Operations'?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It comes under liquidity adjustment facility" },
+        {
+          label: "2",
+          text: "The interest rate should be at or above the repo rate",
+        },
+        { label: "3", text: "It is long term lending by RBI" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 & 3 only",
+      "(c) 2 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["LTRO", "RBI", "liquidity adjustment facility"],
+    },
+  },
+  {
+    questionNumber: 146,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following could be the impact of Long-Term Repo Operation (LTRO) conducted by RBI?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Increase in money supply" },
+        { label: "2", text: "Increase in inflation" },
+        { label: "3", text: "Increase in interest rate" },
+        { label: "4", text: "Increase in liquidity with banks" },
+      ],
+    },
+    options: [
+      "(a) 1, 2 & 3 only",
+      "(b) 1 & 4 only",
+      "(c) 1, 2 & 4 only",
+      "(d) 2, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["LTRO", "RBI", "liquidity", "money supply"],
+    },
+  },
+  {
+    questionNumber: 147,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following could be the reasons for the deficit in banking system liquidity?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "An uptick in the bank credit" },
+        { label: "2", text: "Advance tax payments by corporates" },
+        {
+          label: "3",
+          text: "Incremental deposit growth not keeping pace with credit demand",
+        },
+        {
+          label: "4",
+          text: "Intervention of the RBI into the forex market to prevent rupee depreciation",
+        },
+      ],
+    },
+    options: [
+      "(a) 2 & 3 only",
+      "(b) 3 & 4 only",
+      "(c) 1, 2 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Money, Banking and Financial Institutions",
+      tags: ["liquidity deficit", "bank credit", "RBI", "forex market"],
+    },
+  },
+];
+
+export const set23 = [
+  {
+    questionNumber: 148,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the ‘Monetary Policy’ followed by RBI:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "It follows flexible inflation target" },
+        {
+          label: "2",
+          text: "While inflation is in control, RBI can focus on growth",
+        },
+        {
+          label: "3",
+          text: "Financial Stability is the explicit mandate of monetary policy",
+        },
+        {
+          label: "4",
+          text: "Achieving monetary policy objective will ensure financial stability",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 4 only",
+      "(d) 2, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Monetary Policy",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 149,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following monetary policy tools are used at RBI’s discretion rather than banks availing the facility as per their requirement?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Open market operation" },
+        { label: "2", text: "Long Term Repo Operation" },
+        { label: "3", text: "Overnight fixed rate repo lending" },
+        { label: "4", text: "Reverse repo auction" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2, 3 & 4 only",
+      "(c) 1 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Monetary Policy Tools",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 150,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following indicators is/are used to observe the monetary transmission mechanism in the economy?",
+    prompt: "Select the correct code:",
+    content: {
+      statements: [
+        { label: "1", text: "Weighted average lending rate" },
+        { label: "2", text: "Weighted average domestic term deposit rate" },
+        { label: "3", text: "1-year median MCLR" },
+        { label: "4", text: "MSF rate" },
+      ],
+    },
+    options: [
+      "(a) 1 and 2 only",
+      "(b) 1, 2 and 3 only",
+      "(c) 3 and 4 only",
+      "(d) 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Monetary Transmission",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 151,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following statements are true regarding the Marginal Cost of Funds based Lending Rate (MCLR):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Banks will do lending at or above MCLR" },
+        {
+          label: "2",
+          text: "MCLR may increase because of increase in CRR/SLR",
+        },
+        {
+          label: "3",
+          text: "MCLR helps in better transmission of policy rate as compared to base rate",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 1 & 3 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: { subject: "economy", topic: "MCLR", difficulty: "medium" },
+  },
+  {
+    questionNumber: 152,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the interest rates linked with an external benchmark rate:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "External benchmark rate can be repo rate or yield on government securities",
+        },
+        {
+          label: "2",
+          text: "Once repo rate changes the lending rate of banks will automatically change",
+        },
+        {
+          label: "3",
+          text: "Banks are mandated by RBI to link the deposit and lending rate with external benchmark rate",
+        },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 2 only", "(d) 1 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "External Benchmark Rate",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 153,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding the “spread” charged over the external benchmark rate by the banks:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "The spread will be decided by the banks" },
+        {
+          label: "2",
+          text: "The spread will change with the change of external benchmark rate",
+        },
+        {
+          label: "3",
+          text: "The spread may be different for different category of loans",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Bank Lending Spread",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 154,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding Non-Banking Finance Companies (NBFCs):",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "RBI mandates NBFCs to link their lending rates with an anchor rate",
+        },
+        {
+          label: "2",
+          text: "MCLR is an anchor rate which acts as external benchmark rate",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "NBFCs Regulation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 155,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following could create a hindrance in achieving the objective of inflation targeting by RBI?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Government deviating from the fiscal road map" },
+        { label: "2", text: "Impediments in monetary policy transmission" },
+        { label: "3", text: "Supply side bottlenecks" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation Targeting",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 156,
+    type: "simple-multiple-choice",
+    title:
+      "Which of the following market plays the major role in transmission of monetary policy?",
+    prompt: "Choose the correct option:",
+    options: [
+      "(a) Government Securities market",
+      "(b) Money Market",
+      "(c) Forex market",
+      "(d) Capital Market",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Monetary Policy Transmission",
+      difficulty: "easy",
+    },
+  },
+  {
+    questionNumber: 157,
+    type: "multiple-choice-with-statements",
+    title:
+      "Consider the following statements regarding real and nominal interest rate:",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Real Interest Rate must be positive to encourage savings and reduce consumption",
+        },
+        {
+          label: "2",
+          text: "Nominal interest rate must be positive to attract savings in banks",
+        },
+        { label: "3", text: "Real interest rate is always positive" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 2 & 3 only", "(d) 2 only"],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Interest Rates",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 158,
+    type: "multiple-choice-with-statements",
+    title:
+      "Which of the following factors may lead to increase in savings in the economy?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Positive real interest rate" },
+        { label: "2", text: "Low inflation rate" },
+        { label: "3", text: "Rise in per capita income" },
+        { label: "4", text: "Growth of financial intermediaries" },
+      ],
+    },
+    options: [
+      "(a) 3 only",
+      "(b) 3 & 4 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Savings Factors",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 159,
+    type: "simple-multiple-choice",
+    title: "The term ‘Inflation Premium’ refers to:",
+    prompt: "Choose the correct option:",
+    options: [
+      "(a) Higher nominal return that equity investors get due to increase in inflation",
+      "(b) It is the risk that investors have to face because of higher inflation",
+      "(c) It is the higher return that investors demand in exchange for investing in a long-term security because of higher inflation risk",
+      "(d) It is the high return that short term bond investors demand due to higher inflation risk",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation Premium",
+      difficulty: "medium",
+    },
+  },
+];
+
+export const set24 = [
+  {
+    questionNumber: 160,
+    type: "multiple-choice-with-statements",
+    title: "Inflation in the economy generally leads to which outcomes?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Depreciation of currency" },
+        { label: "2", text: "Appreciation of currency" },
+        { label: "3", text: "Increase in real interest rate" },
+        { label: "4", text: "Increase in nominal interest rate" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 4 only",
+      "(d) 1, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Inflation and Monetary Policy",
+    },
+  },
+  {
+    questionNumber: 161,
+    type: "multiple-choice-with-statements",
+    title: "Features of an economy in Liquidity Trap",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "The interest rate in the market will be very low/zero",
+        },
+        {
+          label: "2",
+          text: "People and businesses both will hold on to their cash and don’t spend",
+        },
+        { label: "3", text: "Yield on bonds will be very less" },
+        { label: "4", text: "Demand Deposits of banks increases" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 4 only",
+      "(c) 1, 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Liquidity Trap",
+    },
+  },
+  {
+    questionNumber: 162,
+    type: "multiple-choice-with-statements",
+    title: "Who benefits from inflation?",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Inflation benefits creditors" },
+        { label: "2", text: "Inflation benefits debtors" },
+        { label: "3", text: "Inflation benefits bondholders" },
+        { label: "4", text: "Inflation benefits depositors" },
+      ],
+    },
+    options: [
+      "(a) 1 & 3 only",
+      "(b) 2 only",
+      "(c) 3 only",
+      "(d) 1, 3 & 4 only",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Inflation Impact",
+    },
+  },
+  {
+    questionNumber: 163,
+    type: "simple-multiple-choice",
+    title: "Impact of inflation on economy",
+    prompt: "If a country is experiencing inflation, then what will decrease?",
+    options: [
+      "(a) Wage level",
+      "(b) The output of goods and services",
+      "(c) The amount of money needed to purchase a given quantity of goods and services",
+      "(d) Purchasing Power",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Inflation",
+    },
+  },
+  {
+    questionNumber: 164,
+    type: "simple-multiple-choice",
+    title: "Outcome under inflationary pressure",
+    prompt:
+      "Which of the following will be the outcome if an economy is under the inflationary pressure?",
+    options: [
+      "(a) Domestic currency heads for depreciation",
+      "(b) Exports become less competitive with imports getting costlier",
+      "(c) Cost of borrowing decreases",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Inflationary Pressure",
+    },
+  },
+  {
+    questionNumber: 165,
+    type: "multiple-choice-with-statements",
+    title: "Factors leading to increase in overall prices",
+    prompt: "Select the correct answer using the code given below:",
+    content: {
+      statements: [
+        { label: "1", text: "Increase in effective demand" },
+        { label: "2", text: "Decrease in the aggregate level of output" },
+        { label: "3", text: "Increase in aggregate output" },
+        { label: "4", text: "An increase in overall employment" },
+      ],
+    },
+    options: [
+      "(a) 1 & 4 only",
+      "(b) 2 & 4 only",
+      "(c) 1, 2 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Price Level",
+    },
+  },
+  {
+    questionNumber: 166,
+    type: "simple-multiple-choice",
+    title: "Situation necessarily leading to inflation",
+    prompt: "Which of the following will necessarily lead to inflation?",
+    options: [
+      "(a) Increase in aggregate demand",
+      "(b) Increase in effective demand",
+      "(c) Decrease in aggregate output",
+      "(d) Increase in government spending",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "medium",
+      subject: "economy",
+      topic: "Inflation Causes",
+    },
+  },
+  {
+    questionNumber: 167,
+    type: "simple-multiple-choice",
+    title: "Effect of increase in money supply",
+    prompt:
+      "If the supply of money is increased in the economy, then which of the following statements are true?",
+    options: [
+      "(a) It may lead to increase in interest rates",
+      "(b) It may lead to decrease in interest rates",
+      "(c) It will necessarily lead to economic growth",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      difficulty: "easy",
+      subject: "economy",
+      topic: "Money Supply",
+    },
+  },
+];
+
+export const set25 = [
+  {
+    questionNumber: 168,
+    type: "multiple-choice-with-statements",
+    title: "Scenarios supporting sustainable economic growth",
+    prompt:
+      "Which of the following scenarios can support sustainable economic growth?",
+    content: {
+      statements: [
+        { label: "1", text: "Deflation" },
+        { label: "2", text: "Low and moderate inflation" },
+        { label: "3", text: "Galloping inflation" },
+        { label: "4", text: "Hyperinflation" },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 1 & 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation and Growth",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 169,
+    type: "multiple-choice-with-statements",
+    title: "Reasons why moderate inflation is good",
+    prompt:
+      "Which of the following are the reasons that make a moderate level of inflation good for the economy?",
+    content: {
+      statements: [
+        { label: "1", text: "It increases consumption levels" },
+        { label: "2", text: "It keeps businesses profitable" },
+        { label: "3", text: "It induces people to save more" },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 1 & 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation and Growth",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 170,
+    type: "multiple-choice-with-statements",
+    title: "Effects of deflation on the economy",
+    prompt:
+      "Consider the following statements regarding an economy facing deflation:",
+    content: {
+      statements: [
+        { label: "1", text: "Companies defer their investments" },
+        { label: "2", text: "People defer their expenditures" },
+        { label: "3", text: "Demand decreases" },
+        { label: "4", text: "Unemployment increases" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 3 only",
+      "(c) 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Deflation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 171,
+    type: "multiple-choice-with-statements",
+    title: "Factors contributing to stagflation in India",
+    prompt:
+      "Which of the following factors could potentially contribute to stagflation in the Indian economy?",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "High inflationary pressures due to increased Government spending",
+        },
+        { label: "2", text: "Expansionary monetary policy" },
+        {
+          label: "3",
+          text: "Decline in industrial production and sluggish economic growth",
+        },
+        {
+          label: "4",
+          text: "Decrease in aggregate demand and consumer spending",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 3 only",
+      "(c) 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Stagflation",
+      difficulty: "high",
+    },
+  },
+  {
+    questionNumber: 172,
+    type: "multiple-choice-with-statements",
+    title: "Supply-side factors responsible for inflation",
+    prompt:
+      "Which of the following are supply side factor/s responsible for inflation?",
+    content: {
+      statements: [
+        { label: "1", text: "Increase in exports" },
+        { label: "2", text: "Increase in government expenditure" },
+        { label: "3", text: "Increase in credit creation" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 3 only",
+      "(c) 1 & 3 only",
+      "(d) None of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 173,
+    type: "multiple-choice-with-statements",
+    title: "Causes of demand-pull inflation",
+    prompt: "Which of the following are causes of demand-pull inflation?",
+    content: {
+      statements: [
+        { label: "1", text: "Lower interest rate" },
+        { label: "2", text: "Higher government expenditure" },
+        { label: "3", text: "Higher cost of inputs" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Inflation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 174,
+    type: "simple-multiple-choice",
+    title: "Impact of decreased interest rate on economy",
+    prompt: "If the interest rate is decreased in an economy, it will",
+    content: {
+      options: [
+        "Decrease the consumption expenditure in the economy",
+        "Increase the tax collection of the Government",
+        "Increase the investment expenditure in the economy",
+        "Increase the total savings in the economy",
+      ],
+    },
+    options: [
+      "(a) Decrease the consumption expenditure in the economy",
+      "(b) Increase the tax collection of the Government",
+      "(c) Increase the investment expenditure in the economy",
+      "(d) Increase the total savings in the economy",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Monetary Policy",
+      difficulty: "medium",
+    },
+  },
+];
+
+export const set26 = [
+  {
+    questionNumber: 189,
+    type: "multiple-choice-with-statements",
+    title: "Actions by RBI under Prompt Corrective Action",
+    prompt:
+      "Which of the following actions RBI can take once it declares a particular bank under Prompt Corrective Action?",
+    content: {
+      statements: [
+        { label: "1", text: "Prohibit lending" },
+        { label: "2", text: "Increase in provisioning" },
+        {
+          label: "3",
+          text: "Bring in new management or supersede the bank's board",
+        },
+        { label: "4", text: "Bank merger" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 4 only",
+      "(c) 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Regulation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 190,
+    type: "multiple-choice-with-statements",
+    title: "Supervisory Action Framework",
+    prompt:
+      "Consider the following statements regarding the 'Supervisory Action Framework':",
+    content: {
+      statements: [
+        { label: "1", text: "It is applicable for Urban-Cooperative banks" },
+        {
+          label: "2",
+          text: "It can be initiated in case of serious governance issues",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Supervision",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 191,
+    type: "multiple-choice-with-statements",
+    title: "RBI and Forex Reserves Management",
+    prompt: "RBI manages its forex reserves as:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Deposits with Bank for International Settlement (BIS)",
+        },
+        { label: "2", text: "Deposits with Foreign Commercial banks" },
+        { label: "3", text: "Deposits with foreign Central banks" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Forex Reserves",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 192,
+    type: "simple-multiple-choice",
+    title: "Understanding Line of Credit",
+    prompt:
+      "Which of the following statements is true regarding 'Line of Credit'?",
+    options: [
+      "(a) It is issued by one bank to another",
+      "(b) It is issued mainly in case of international transactions",
+      "(c) It is a preset amount of money that a bank has agreed to lend",
+      "(d) The company will have to pay interest on the amount for which line of credit has been issued",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Instruments",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 193,
+    type: "multiple-choice-with-statements",
+    title: "Teaser Loans in Banking",
+    prompt:
+      "Which of the following statements are true regarding 'Teaser Loans'?",
+    content: {
+      statements: [
+        { label: "1", text: "It is a fixed cum floating loan product" },
+        { label: "2", text: "These are short term loans" },
+        { label: "3", text: "These loans are banned by RBI" },
+      ],
+    },
+    options: ["(a) 1 only", "(b) 1 & 2 only", "(c) 3 only", "(d) 2 & 3 only"],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Loans",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 194,
+    type: "simple-multiple-choice",
+    title: "Provisioning in Banking Sector",
+    prompt:
+      "The term 'provisioning' in the banking sector is related to which of the following?",
+    options: [
+      "(a) It is the loss that the bank incurs on sale of bad assets",
+      "(b) It is the amount of fund that the bank needs to set aside when the loan turns NPA",
+      "(c) It is the minimum amount of funds that the depositors will receive when the bank goes bankrupt",
+      "(d) It is the minimum amount which the borrower will have to pay even if the loan turns NPA",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Regulation",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 195,
+    type: "multiple-choice-with-statements",
+    title: "First Loss Default Guarantee (FLDG)",
+    prompt:
+      "Consider the following statements regarding 'First Loss Default Guarantee (FLDG)':",
+    content: {
+      statements: [
+        { label: "1", text: "It has been approved by RBI" },
+        {
+          label: "2",
+          text: "It’s a contractual agreement between banks and Fintechs under which Fintechs give guarantee for loss due to default",
+        },
+        {
+          label: "3",
+          text: "The loan is shared on the books of banks and Fintechs",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 & 3 only",
+      "(c) 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking & Fintech",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 196,
+    type: "multiple-choice-with-statements",
+    title: "Capital Adequacy Ratio (CAR)",
+    prompt: "Consider the following statements:",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Capital Adequacy Ratio (CAR) is the amount that banks have to maintain in the form of their own funds to offset any loss that banks incur if the accountholders fail to repay dues.",
+        },
+        { label: "2", text: "CAR is decided by each individual bank." },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) Both 1 & 2",
+      "(d) Neither 1 nor 2",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Banking Capital Norms",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 197,
+    type: "multiple-choice-with-statements",
+    title: "Additional Tier 1 Bonds",
+    prompt:
+      "Consider the following statements regarding 'Additional Tier 1 bonds':",
+    content: {
+      statements: [
+        { label: "1", text: "They are part of capital under Basel III norms" },
+        {
+          label: "2",
+          text: "They are perpetual in nature and have no maturity period",
+        },
+        {
+          label: "3",
+          text: "They can be written down in case of bank failure",
+        },
+      ],
+    },
+    options: [
+      "(a) 2 only",
+      "(b) 3 only",
+      "(c) 1 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Basel III Norms",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 198,
+    type: "multiple-choice-with-statements",
+    title: "Liberalized Remittance Scheme (LRS)",
+    prompt:
+      "Which of the following statements are true regarding the 'Liberalized Remittance Scheme (LRS)'?",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "It is applicable for Individuals only and not companies",
+        },
+        {
+          label: "2",
+          text: "It is applicable for both current and capital account",
+        },
+        {
+          label: "3",
+          text: "Foreign exchange trading is not permitted in this scheme",
+        },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 2 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Foreign Exchange Management",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 199,
+    type: "multiple-choice-with-statements",
+    title: "Instruments Permitted for Foreign Investment",
+    prompt:
+      "Which of the following instruments are permitted for receiving 'foreign investment' in an Indian Company?",
+    content: {
+      statements: [
+        { label: "1", text: "Equity shares" },
+        { label: "2", text: "Debentures" },
+        { label: "3", text: "Preference Shares" },
+        { label: "4", text: "Share Warrants" },
+      ],
+    },
+    options: [
+      "(a) 1 only",
+      "(b) 1 & 3 only",
+      "(c) 2 & 3 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: { subject: "economy", topic: "FDI", difficulty: "medium" },
+  },
+  {
+    questionNumber: 200,
+    type: "multiple-choice-with-statements",
+    title: "What Can be Treated as FDI",
+    prompt: "Which of the following can be treated as FDI?",
+    content: {
+      statements: [
+        {
+          label: "1",
+          text: "Investment in Central and State Govt. securities",
+        },
+        { label: "2", text: "Foreign Currency Convertible Bonds (FCCB)" },
+        { label: "3", text: "Global Depository Receipts (GDRs)" },
+        { label: "4", text: "Financial Lease" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 2, 3 & 4 only",
+      "(d) All of the above",
+    ],
+    correctAnswer: "",
+    metadata: {
+      subject: "economy",
+      topic: "Foreign Direct Investment",
+      difficulty: "medium",
+    },
+  },
+  {
+    questionNumber: 201,
+    type: "multiple-choice-with-statements",
+    title: "Foreign Direct Investment (FDI) in India",
+    prompt:
+      "Foreign Direct Investment (FDI) in India can happen by which of the following ways:",
+    content: {
+      statements: [
+        { label: "1", text: "Subsidiary" },
+        { label: "2", text: "Joint Venture" },
+        { label: "3", text: "Acquisition of shares" },
+      ],
+    },
+    options: [
+      "(a) 1 & 2 only",
+      "(b) 2 & 3 only",
+      "(c) 1, 2 & 3 only",
+      "(d) 3 only",
+    ],
+    correctAnswer: "",
+    metadata: { subject: "economy", topic: "FDI", difficulty: "medium" },
+  },
+];
