@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -22,97 +22,20 @@ import {
 } from "@/components/ui/select";
 import { Header } from "@/components/header";
 import { Sidebar } from "@/components/sidebar";
+import questions from "@/data/data.json";
 
-const problems = [
-  {
-    id: 1,
-    title: "Two Sum",
-    difficulty: "Easy",
-    category: "Array",
-    solved: true,
-    attempted: true,
-    acceptance: "49.1%",
-    description:
-      "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
-  },
-  {
-    id: 2,
-    title: "Add Two Numbers",
-    difficulty: "Medium",
-    category: "Linked List",
-    solved: false,
-    attempted: true,
-    acceptance: "38.4%",
-    description:
-      "You are given two non-empty linked lists representing two non-negative integers.",
-  },
-  {
-    id: 3,
-    title: "Longest Substring Without Repeating Characters",
-    difficulty: "Medium",
-    category: "String",
-    solved: true,
-    attempted: true,
-    acceptance: "33.8%",
-    description:
-      "Given a string s, find the length of the longest substring without repeating characters.",
-  },
-  {
-    id: 4,
-    title: "Median of Two Sorted Arrays",
-    difficulty: "Hard",
-    category: "Array",
+// Map raw questions to dashboard-friendly structure
+const mapQuestionsToProblems = (items) =>
+  items.map((q) => ({
+    id: q.questionNumber,
+    title: q.title,
+    difficulty: (q?.metadata?.difficulty || "unknown").replace(/^[a-z]/, (c) => c.toUpperCase()),
+    category: q?.metadata?.subject || "general",
     solved: false,
     attempted: false,
-    acceptance: "35.2%",
-    description:
-      "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median.",
-  },
-  {
-    id: 5,
-    title: "Longest Palindromic Substring",
-    difficulty: "Medium",
-    category: "String",
-    solved: false,
-    attempted: true,
-    acceptance: "32.1%",
-    description:
-      "Given a string s, return the longest palindromic substring in s.",
-  },
-  {
-    id: 6,
-    title: "ZigZag Conversion",
-    difficulty: "Medium",
-    category: "String",
-    solved: true,
-    attempted: true,
-    acceptance: "42.3%",
-    description:
-      "The string 'PAYPALISHIRING' is written in a zigzag pattern on a given number of rows.",
-  },
-  {
-    id: 7,
-    title: "Reverse Integer",
-    difficulty: "Easy",
-    category: "Math",
-    solved: false,
-    attempted: false,
-    acceptance: "26.8%",
-    description:
-      "Given a signed 32-bit integer x, return x with its digits reversed.",
-  },
-  {
-    id: 8,
-    title: "String to Integer (atoi)",
-    difficulty: "Medium",
-    category: "String",
-    solved: false,
-    attempted: true,
-    acceptance: "16.4%",
-    description:
-      "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.",
-  },
-];
+    acceptance: "",
+    description: q.prompt || q.title,
+  }));
 
 const getDifficultyColor = (difficulty) => {
   switch (difficulty) {
@@ -137,6 +60,18 @@ export function ProblemDashboard() {
   const [searchTerm, setSearchTerm] = useState("");
   const [difficultyFilter, setDifficultyFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState("all");
+
+  const problems = useMemo(() => mapQuestionsToProblems(questions), []);
+
+  const difficulties = useMemo(() => {
+    const set = new Set(problems.map((p) => p.difficulty));
+    return Array.from(set).filter(Boolean);
+  }, [problems]);
+
+  const categories = useMemo(() => {
+    const set = new Set(problems.map((p) => p.category.toLowerCase()));
+    return Array.from(set).filter(Boolean);
+  }, [problems]);
 
   const filteredProblems = problems.filter((problem) => {
     const matchesSearch = problem.title
@@ -217,18 +152,17 @@ export function ProblemDashboard() {
                   className="pl-10"
                 />
               </div>
-              <Select
-                value={difficultyFilter}
-                onValueChange={setDifficultyFilter}
-              >
+              <Select value={difficultyFilter} onValueChange={setDifficultyFilter}>
                 <SelectTrigger className="w-full sm:w-[180px]">
                   <SelectValue placeholder="Difficulty" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Difficulties</SelectItem>
-                  <SelectItem value="easy">Easy</SelectItem>
-                  <SelectItem value="medium">Medium</SelectItem>
-                  <SelectItem value="hard">Hard</SelectItem>
+                  {difficulties.map((d) => (
+                    <SelectItem key={d} value={d.toLowerCase()}>
+                      {d}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
               <Select value={categoryFilter} onValueChange={setCategoryFilter}>
@@ -237,10 +171,11 @@ export function ProblemDashboard() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Categories</SelectItem>
-                  <SelectItem value="array">Array</SelectItem>
-                  <SelectItem value="string">String</SelectItem>
-                  <SelectItem value="linked list">Linked List</SelectItem>
-                  <SelectItem value="math">Math</SelectItem>
+                  {categories.map((c) => (
+                    <SelectItem key={c} value={c}>
+                      {c}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </div>
@@ -276,12 +211,12 @@ export function ProblemDashboard() {
                             >
                               {problem.difficulty}
                             </Badge>
-                            <Badge variant="secondary">
-                              {problem.category}
-                            </Badge>
-                            <span className="text-sm text-gray-500 min-w-[60px] text-right">
-                              {problem.acceptance}
-                            </span>
+                            <Badge variant="secondary">{problem.category}</Badge>
+                            {problem.acceptance ? (
+                              <span className="text-sm text-gray-500 min-w-[60px] text-right">
+                                {problem.acceptance}
+                              </span>
+                            ) : null}
                           </div>
                         </div>
                       </div>

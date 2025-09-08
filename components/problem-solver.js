@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -17,41 +17,8 @@ import { Badge } from "@/components/ui/badge";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-
-const problemData = {
-  1: {
-    id: 1,
-    title: "Two Sum",
-    difficulty: "Easy",
-    category: "Array",
-    description:
-      "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
-    detailedDescription: `You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-You can return the answer in any order.`,
-    examples: [
-      {
-        input: "nums = [2,7,11,15], target = 9",
-        output: "[0,1]",
-        explanation: "Because nums[0] + nums[1] == 9, we return [0, 1].",
-      },
-      {
-        input: "nums = [3,2,4], target = 6",
-        output: "[1,2]",
-        explanation: "Because nums[1] + nums[2] == 6, we return [1, 2].",
-      },
-    ],
-    question: "What is the optimal time complexity for the Two Sum problem?",
-    options: [
-      { id: "a", text: "O(n²) using nested loops", correct: false },
-      { id: "b", text: "O(n log n) using sorting", correct: false },
-      { id: "c", text: "O(n) using hash map", correct: true },
-      { id: "d", text: "O(1) constant time", correct: false },
-    ],
-    explanation:
-      "The optimal solution uses a hash map to store previously seen numbers and their indices. This allows us to find the complement in O(1) time, resulting in overall O(n) time complexity.",
-  },
-};
+import questions from "@/data/data.json";
+import { QuestionRenderer } from "@/components/questionsrender";
 
 const getDifficultyColor = (difficulty) => {
   switch (difficulty) {
@@ -71,7 +38,33 @@ export function ProblemSolver({ problemId }) {
   const [showResult, setShowResult] = useState(false);
   const [timeElapsed, setTimeElapsed] = useState(0);
 
-  const problem = problemData[Number.parseInt(problemId)];
+  const problem = useMemo(() => {
+    const id = Number.parseInt(problemId);
+    const q = questions.find((x) => x.questionNumber === id);
+    if (!q) return null;
+    const difficulty = (q?.metadata?.difficulty || "unknown").replace(
+      /^[a-z]/,
+      (c) => c.toUpperCase()
+    );
+    const category = q?.metadata?.subject || "general";
+    // Build normalized options list and whether we can grade
+    const options = Array.isArray(q.options) ? q.options : [];
+    const canGrade =
+      typeof q.correctAnswer === "string" && q.correctAnswer.trim().length > 0;
+    return {
+      id: q.questionNumber,
+      title: q.title,
+      difficulty,
+      category,
+      prompt: q.prompt || "",
+      type: q.type,
+      content: q.content || {},
+      options,
+      correctAnswer: q.correctAnswer || "",
+      canGrade,
+      explanation: q.explanation || "",
+    };
+  }, [problemId]);
 
   if (!problem) {
     return (
@@ -98,8 +91,37 @@ export function ProblemSolver({ problemId }) {
     setShowResult(false);
   };
 
-  const isCorrect =
-    selectedAnswer === problem.options.find((opt) => opt.correct)?.id;
+  const isCorrect = problem?.canGrade
+    ? selectedAnswer === problem.correctAnswer
+    : false;
+
+  const renderQuestionData = useMemo(() => {
+    if (!problem) return null;
+    // Adapt content to the QuestionRenderer shape
+    let content = problem.content || {};
+    if (
+      problem.type === "multiple-choice-with-statements" &&
+      Array.isArray(problem.content?.statements)
+    ) {
+      content = {
+        ...content,
+        romanNumerals: problem.content.statements.map((s) => ({
+          numeral: s.label,
+          text: s.text,
+        })),
+      };
+    }
+    return {
+      id: problem.id,
+      title: problem.title,
+      type: problem.type,
+      prompt: problem.prompt,
+      content,
+      options: problem.options,
+      correctAnswer: problem.correctAnswer,
+      explanation: problem.explanation,
+    };
+  }, [problem]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -144,42 +166,23 @@ export function ProblemSolver({ problemId }) {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <span>Problem Description</span>
+                  <span>Question</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-gray-700 leading-relaxed">
-                  {problem.description}
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  {problem.detailedDescription}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Examples</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {problem.examples.map((example, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="font-medium text-sm">
-                      Example {index + 1}:
-                    </div>
-                    <div className="bg-gray-50 p-3 rounded-md font-mono text-sm">
-                      <div>
-                        <strong>Input:</strong> {example.input}
-                      </div>
-                      <div>
-                        <strong>Output:</strong> {example.output}
-                      </div>
-                      <div>
-                        <strong>Explanation:</strong> {example.explanation}
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                {renderQuestionData && (
+                  <QuestionRenderer
+                    question={renderQuestionData}
+                    questionNumber={renderQuestionData.id}
+                    status={
+                      showResult
+                        ? isCorrect
+                          ? "correct"
+                          : "incorrect"
+                        : "unanswered"
+                    }
+                  />
+                )}
               </CardContent>
             </Card>
           </div>
@@ -189,37 +192,35 @@ export function ProblemSolver({ problemId }) {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Lightbulb className="w-5 h-5" />
-                  <span>Multiple Choice Question</span>
+                  {problem.prompt && (
+                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                      <p className="font-semibold text-blue-900">
+                        {problem.prompt}
+                      </p>
+                    </div>
+                  )}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="text-gray-700 font-medium">
-                  {problem.question}
-                </div>
-
                 <RadioGroup
                   value={selectedAnswer}
                   onValueChange={setSelectedAnswer}
                 >
                   <div className="space-y-3">
-                    {problem.options.map((option) => (
-                      <div
-                        key={option.id}
-                        className="flex items-center space-x-2"
-                      >
-                        <RadioGroupItem value={option.id} id={option.id} />
-                        <Label
-                          htmlFor={option.id}
-                          className="flex-1 cursor-pointer p-3 rounded-md border hover:bg-gray-50 transition-colors"
-                        >
-                          <span className="font-medium mr-2">
-                            {option.id.toUpperCase()}.
-                          </span>
-                          {option.text}
-                        </Label>
-                      </div>
-                    ))}
+                    {problem.options.map((text, idx) => {
+                      const id = `opt-${idx}`;
+                      return (
+                        <div key={id} className="flex items-center space-x-2">
+                          <RadioGroupItem value={text} id={id} />
+                          <Label
+                            htmlFor={id}
+                            className="flex-1 cursor-pointer p-3 rounded-md border hover:bg-gray-50 transition-colors"
+                          >
+                            {text}
+                          </Label>
+                        </div>
+                      );
+                    })}
                   </div>
                 </RadioGroup>
 
@@ -230,7 +231,7 @@ export function ProblemSolver({ problemId }) {
                     className="flex-1"
                   >
                     <Play className="w-4 h-4 mr-2" />
-                    Submit Answer
+                    {problem.canGrade ? "Submit Answer" : "Record Answer"}
                   </Button>
                   <Button variant="outline" onClick={handleReset}>
                     <RotateCcw className="w-4 h-4 mr-2" />
@@ -238,7 +239,7 @@ export function ProblemSolver({ problemId }) {
                   </Button>
                 </div>
 
-                {showResult && (
+                {showResult && problem.canGrade && (
                   <Alert
                     className={
                       isCorrect
@@ -260,9 +261,21 @@ export function ProblemSolver({ problemId }) {
                         {isCorrect ? "Correct!" : "Incorrect"}
                       </span>
                     </div>
-                    <AlertDescription className="mt-2">
-                      <strong>Explanation:</strong> {problem.explanation}
-                    </AlertDescription>
+                    {problem.explanation && (
+                      <AlertDescription className="mt-2">
+                        <strong>Explanation:</strong> {problem.explanation}
+                      </AlertDescription>
+                    )}
+                  </Alert>
+                )}
+                {showResult && !problem.canGrade && (
+                  <Alert className="border-blue-200 bg-blue-50">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-blue-600" />
+                      <span className="font-medium text-blue-800">
+                        Answer recorded
+                      </span>
+                    </div>
                   </Alert>
                 )}
               </CardContent>
@@ -280,7 +293,7 @@ export function ProblemSolver({ problemId }) {
                         Back to Problem List
                       </Button>
                     </Link>
-                    <Button className="w-full">Try Another Problem</Button>
+                    <Button className="w-full">Try Another Question</Button>
                   </div>
                 </CardContent>
               </Card>
