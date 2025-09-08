@@ -13,6 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -60,6 +61,8 @@ export function ProblemDashboard() {
   const [searchTerm, setSearchTerm] = useState("");
   const [difficultyFilter, setDifficultyFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(20);
 
   const problems = useMemo(() => mapQuestionsToProblems(questions), []);
 
@@ -86,11 +89,25 @@ export function ProblemDashboard() {
     return matchesSearch && matchesDifficulty && matchesCategory;
   });
 
+  const total = filteredProblems.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = Math.min(startIndex + pageSize, total);
+  const paginatedProblems = filteredProblems.slice(startIndex, endIndex);
+
   const stats = {
     total: problems.length,
     solved: problems.filter((p) => p.solved).length,
     attempted: problems.filter((p) => p.attempted && !p.solved).length,
   };
+
+  // Reset/clamp pagination on filters/search change
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useMemo(() => {
+    setPage(1);
+    return null;
+  }, [searchTerm, difficultyFilter, categoryFilter, pageSize]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -181,10 +198,54 @@ export function ProblemDashboard() {
             </div>
 
             {/* Problems List */}
+            <div className="flex items-center justify-between mb-3">
+              <div className="text-sm text-gray-600">
+                Showing {total === 0 ? 0 : startIndex + 1}
+                {total > 0 ? `–${endIndex}` : ""} of {total}
+              </div>
+              <div className="flex items-center gap-2">
+                <Select
+                  value={String(pageSize)}
+                  onValueChange={(v) => setPageSize(Number(v))}
+                >
+                  <SelectTrigger className="w-[120px]">
+                    <SelectValue placeholder="Page size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {[10, 20, 50, 100].map((n) => (
+                      <SelectItem key={n} value={String(n)}>
+                        {n} / page
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setPage((p) => Math.max(1, p - 1))}
+                    disabled={currentPage <= 1}
+                  >
+                    Prev
+                  </Button>
+                  <span className="text-sm text-gray-600 min-w-[80px] text-center">
+                    {currentPage} / {totalPages}
+                  </span>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                    disabled={currentPage >= totalPages}
+                  >
+                    Next
+                  </Button>
+                </div>
+              </div>
+            </div>
             <Card>
               <CardContent className="p-0">
                 <div className="divide-y">
-                  {filteredProblems.map((problem) => (
+                  {paginatedProblems.map((problem) => (
                     <Link key={problem.id} href={`/problem/${problem.id}`}>
                       <div className="p-4 hover:bg-gray-50 transition-colors cursor-pointer">
                         <div className="flex items-center justify-between">

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
+  ArrowRight,
   Play,
   RotateCcw,
   CheckCircle,
@@ -65,6 +66,20 @@ export function ProblemSolver({ problemId }) {
       explanation: q.explanation || "",
     };
   }, [problemId]);
+
+  const orderedIds = useMemo(
+    () => questions.map((q) => q.questionNumber).sort((a, b) => a - b),
+    [],
+  );
+  const currentIndex = useMemo(() => {
+    if (!problem) return -1;
+    return orderedIds.indexOf(problem.id);
+  }, [orderedIds, problem]);
+  const prevId = currentIndex > 0 ? orderedIds[currentIndex - 1] : null;
+  const nextId =
+    currentIndex >= 0 && currentIndex < orderedIds.length - 1
+      ? orderedIds[currentIndex + 1]
+      : null;
 
   if (!problem) {
     return (
@@ -293,7 +308,30 @@ export function ProblemSolver({ problemId }) {
                         Back to Problem List
                       </Button>
                     </Link>
-                    <Button className="w-full">Try Another Question</Button>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {prevId ? (
+                        <Link href={`/problem/${prevId}`}>
+                          <Button variant="outline" className="w-full">
+                            <ArrowLeft className="w-4 h-4 mr-2" /> Previous
+                          </Button>
+                        </Link>
+                      ) : (
+                        <Button variant="outline" className="w-full" disabled>
+                          <ArrowLeft className="w-4 h-4 mr-2" /> Previous
+                        </Button>
+                      )}
+                      {nextId ? (
+                        <Link href={`/problem/${nextId}`}>
+                          <Button className="w-full">
+                            Next <ArrowRight className="w-4 h-4 ml-2" />
+                          </Button>
+                        </Link>
+                      ) : (
+                        <Button className="w-full" disabled>
+                          Next <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
