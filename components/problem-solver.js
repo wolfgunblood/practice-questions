@@ -67,7 +67,7 @@ const getDifficultyColor = (difficulty) => {
 };
 
 export function ProblemSolver({ problemId }) {
-  const [selectedAnswer, setSelectedAnswer] = useState < string > "";
+  const [selectedAnswer, setSelectedAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
   const [timeElapsed, setTimeElapsed] = useState(0);
 
