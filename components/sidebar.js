@@ -1,19 +1,40 @@
-import { BookOpen, Code, Database, Hash, Layers, Zap, Brain, Target } from "lucide-react"
+import { BookOpen, Database, Hash, Layers, Zap, Brain, Target } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+import questions from "@/data/data.json"
 
-const categories = [
-  { name: "Array", icon: Layers, count: 156, solved: 23 },
-  { name: "String", icon: Hash, count: 89, solved: 12 },
-  { name: "Linked List", icon: Code, count: 45, solved: 8 },
-  { name: "Tree", icon: BookOpen, count: 78, solved: 15 },
-  { name: "Dynamic Programming", icon: Brain, count: 67, solved: 5 },
-  { name: "Graph", icon: Target, count: 34, solved: 3 },
-  { name: "Math", icon: Zap, count: 92, solved: 18 },
-  { name: "Database", icon: Database, count: 28, solved: 7 },
-]
+// Map subjects to icons (fallback to Layers)
+const subjectIcon = (subject) => {
+  const key = (subject || "").toLowerCase()
+  if (key.includes("economy")) return BookOpen
+  if (key.includes("math")) return Zap
+  if (key.includes("graph")) return Target
+  if (key.includes("string")) return Hash
+  if (key.includes("database")) return Database
+  if (key.includes("brain") || key.includes("analysis")) return Brain
+  return Layers
+}
+
+const categories = (() => {
+  const counts = new Map()
+  for (const q of questions) {
+    const subject = q?.metadata?.subject || "general"
+    counts.set(subject, (counts.get(subject) || 0) + 1)
+  }
+  return Array.from(counts.entries()).map(([name, count]) => ({
+    name,
+    icon: subjectIcon(name),
+    count,
+    solved: 0,
+  }))
+})()
 
 export function Sidebar() {
+  const total = questions.length
+  const solved = 0
+  const attempted = 0
+  const todo = total - solved - attempted
+  const overallProgress = total > 0 ? (solved / total) * 100 : 0
   return (
     <aside className="w-64 bg-white border-r p-6 space-y-6">
       <Card>
@@ -25,21 +46,23 @@ export function Sidebar() {
             <div>
               <div className="flex justify-between text-sm mb-2">
                 <span>Overall Progress</span>
-                <span>91/589</span>
+                <span>
+                  {solved}/{total}
+                </span>
               </div>
-              <Progress value={15.4} className="h-2" />
+              <Progress value={overallProgress} className="h-2" />
             </div>
             <div className="grid grid-cols-3 gap-2 text-center">
               <div>
-                <div className="text-lg font-bold text-green-600">91</div>
+                <div className="text-lg font-bold text-green-600">{solved}</div>
                 <div className="text-xs text-gray-500">Solved</div>
               </div>
               <div>
-                <div className="text-lg font-bold text-yellow-600">34</div>
+                <div className="text-lg font-bold text-yellow-600">{attempted}</div>
                 <div className="text-xs text-gray-500">Attempted</div>
               </div>
               <div>
-                <div className="text-lg font-bold text-gray-400">464</div>
+                <div className="text-lg font-bold text-gray-400">{todo}</div>
                 <div className="text-xs text-gray-500">Todo</div>
               </div>
             </div>
